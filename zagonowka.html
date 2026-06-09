@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- RU -->
+    <button class="ru-btn modal-trigger" data-modal="ru_1">RU</button>
+
+    <div class="modal" data-modal="ru_1">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Мешко I</h4>
+            <p>
+                Первый исторический правитель Польши,
+                основатель государства и династии Пястов.
+            </p>
+        </div>
+    </div>
+    <!--  -->
+
+    <div class="remember-note">
+        <h3>💡 Zapamiętaj!</h3>
+
+        <p>
+            Przyroda tworzy <strong>krajobraz naturalny</strong> 🌲<br>
+            Człowiek tworzy <strong>krajobraz kulturowy</strong> 🏙️
+        </p>
+    </div>
+
+    <!-- мини тест -->
+    <section class="slide" id="slide20">
+
+        <div class="cфrd lesson-block">
+            <h2>🧠 Mini Test</h2>
+            <div class="question" data-correct="naturalny">
+                <p>1. Jaki krajobraz tworzy przyroda?</p> <label><input type="radio" name="q1" value="naturalny">
+                    Krajobraz naturalny</label> <label><input type="radio" name="q1" value="miejski"> Krajobraz
+                    miejski</label> <label><input type="radio" name="q1" value="przemyslowy"> Krajobraz
+                    przemysłowy</label>
+            </div>
+            <div class="question" data-correct="kulturowy">
+                <p>2. Miasto jest przykładem:</p> <label><input type="radio" name="q2" value="naturalny"> Krajobrazu
+                    naturalnego</label> <label><input type="radio" name="q2" value="kulturowy"> Krajobrazu
+                    kulturowego</label>
+            </div>
+            <div class="question" data-correct="rolniczy">
+                <p>3. Gdzie zobaczymy pola uprawne?</p> <label><input type="radio" name="q3" value="miejski"> Krajobraz
+                    miejski</label> <label><input type="radio" name="q3" value="rolniczy"> Krajobraz rolniczy</label>
+                <label><input type="radio" name="q3" value="przemyslowy"> Krajobraz przemysłowy</label>
+            </div>
+            <div class="question" data-correct="przemyslowy">
+                <p>4. Fabryki i elektrownie występują w:</p> <label><input type="radio" name="q4" value="rolniczy">
+                    Krajobrazie rolniczym</label> <label><input type="radio" name="q4" value="przemyslowy"> Krajobrazie
+                    przemysłowym</label>
+            </div>
+            <div class="question" data-correct="miejski">
+                <p>5. Wieżowce są charakterystyczne dla:</p> <label><input type="radio" name="q5" value="miejski">
+                    Krajobrazu miejskiego</label> <label><input type="radio" name="q5" value="naturalny"> Krajobrazu
+                    naturalnego</label>
+            </div>
+            <div class="question" data-correct="naturalny">
+                <p>6. Las jest przykładem:</p> <label><input type="radio" name="q6" value="naturalny"> Krajobrazu
+                    naturalnego</label> <label><input type="radio" name="q6" value="kulturowy"> Krajobrazu
+                    kulturowego</label>
+            </div>
+            <div class="question" data-correct="kulturowy">
+                <p>7. Który krajobraz tworzy człowiek?</p> <label><input type="radio" name="q7" value="naturalny">
+                    Naturalny</label> <label><input type="radio" name="q7" value="kulturowy"> Kulturowy</label>
+            </div> <button class="btn" onclick="checkQuiz()"> ✅ Sprawdź </button>
+            <div id="quizResult">
+
+            </div>
+            <!-- navigation -->
+            <div class="navigation">
+                <button class="btn-back" onclick="prevSlide()">
+                    ← Wstecz
+                </button>
+
+                <button class="btn-next" onclick="nextSlide()">
+                    Dalej →
+                </button>
+            </div>
+            <!-- end navigation -->
+        </div>
+    </section>
+
+    <!-- sowa подумай, вопрос-->
+    <div class="rule-title">
+        <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
+        <span>Pamiętaj</span>
+    </div>
+    <!-- end sowa zapamjetaj -->
+
+    <!-- ua -->
+    <div class="ua-box">
+        <button class="ua-trigger">🇺🇦 Українською</button>
+        <div class="ua-content">
+            <p>🍕 Уяви піцу. </p>
+            <p>Ти ще її не розрізав.</p>
+            <p>У тебе є вся піца.</p>
+            <p>Це і є <b>ціле</b>.</p>
+            <p>У математиці ціле — це те, що ще не поділили на частини.</p>
+        </div>
+    </div>
+
+    <!-- обьемныц блок
+    background: linear-gradient(to bottom, #6d4ab3, #5b3a99);
+    box-shadow:
+    inset 0 2px 0 rgba(255,255,255,.35),
+    inset 0 -2px 0 rgba(0,0,0,.15);
+  border: 2px solid #3a245f;
+    -->
+
+
+</body>
+
+</html>

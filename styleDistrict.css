@@ -1,0 +1,456 @@
+.district-card{
+    position:absolute;
+
+    right:40px;
+    top:140px;
+
+    width:320px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.5s;
+
+    z-index:200;
+}
+
+.district-card.hidden{
+    opacity:0;
+    transform:translateY(-20px);
+    pointer-events:none;
+}
+
+/* Dzielnica Liczb */
+.numbers{
+    position:absolute;
+    top:14%;
+    left:24%;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #6edb77,
+        #2fa94f
+    );
+
+    color:white;
+
+    font-size:1.1rem;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 4px rgba(255,255,255,.9);
+
+    transition:.3s;
+
+    z-index:50;
+}
+/* Эффект наведения: */
+.numbers:hover,
+.operations:hover,
+.fractions:hover,
+.measures:hover,
+.data:hover,
+.algebra:hover{
+    transform:scale(1.15);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.3),
+        0 0 0 5px white;
+}
+/* Если район изучен: */
+.completed{
+    background:linear-gradient(
+        135deg,
+        #71e37a,
+        #2f9f4c
+    );
+}
+/* маленькое свечение: */
+.completed{
+    animation:completedGlow 3s infinite;
+}
+
+@keyframes completedGlow{
+
+    0%,100%{
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(46,204,113,.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+}
+
+
+
+/* ZDANIE operations */
+.operations{
+    position:absolute;
+
+    top:13%;
+    left:43%;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #6ec8ff,
+        #2980ff
+    );
+
+    color:white;
+
+    font-size:1rem;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 4px rgba(255,255,255,.9);
+
+    transition:.3s;
+
+    z-index:50;
+}
+
+.operations.completed{
+    animation:operationsGlow 3s infinite;
+}
+
+@keyframes operationsGlow{
+
+    0%,100%{
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(41,128,255,.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+}
+/* end  ZDANIE operations */
+
+/* ZDANIE fractions */
+.fractions{
+    position:absolute;
+
+    top:42%;
+    left:80%;
+
+    width:72px;
+    height:72px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #ffd54f,
+        #ff9800
+    );
+
+    color:white;
+
+    font-size:1.8rem;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 5px rgba(255,255,255,.95);
+
+    transition:.3s;
+
+    z-index:60;
+}
+.fractions.completed{
+    animation: operationsGlow 3s infinite;
+}
+
+@keyframes fractionsGlow{
+
+    0%,100%{
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(41,128,255,.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+}
+
+
+/* Zdanie weliczin */
+.measures{
+    position:absolute;
+
+    top:20%;
+    left:68%;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #ffb74d,
+        #f57c00
+    );
+
+    color:white;
+
+    font-size:1.3rem;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 4px rgba(255,255,255,.9);
+
+    transition:.3s;
+
+    z-index:50;
+}
+.measures.completed{
+    animation:measureGlow 3s infinite;
+}
+
+@keyframes measuresGlow{
+
+    0%,100%{
+        opacity:.75;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        opacity:1;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(245,124,0,.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+}
+
+
+/* Zdanie geometria */
+.geometry{
+    position:absolute;
+
+    top:50%;
+    left:110px;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #b388ff,
+        #7e57c2
+    );
+
+    color:white;
+
+    font-size:1.3rem;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 4px rgba(255,255,255,.9);
+
+    transition:.3s;
+
+    z-index:50;
+}
+.geometry.locked{
+    opacity:.75;
+}
+.geometry:hover{
+    transform:scale(1.15);
+
+    opacity:1;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.3),
+        0 0 15px rgba(126,87,194,.8),
+        0 0 0 5px white;
+}
+.geometry.locked{
+    animation:geometryGlow 4s infinite;
+}
+
+@keyframes geometryGlow{
+
+    0%,100%{
+        opacity:.75;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        opacity:1;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(152, 41, 255, 0.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+}
+
+/* ZDANIE dannych */
+
+.data{
+    position:absolute;
+
+    top:85%;
+    left:35%;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #4dd0e1,
+        #0097a7
+    );
+
+    color:white;
+
+    font-size:1.3rem;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 4px rgba(255,255,255,.9);
+
+    transition:.3s;
+
+    z-index:50;
+}
+
+.data.locked{
+    animation:dataGlow 4s infinite;
+}
+
+@keyframes dataGlow{
+
+    0%,100%{
+        opacity:.75;
+        opacity:.75;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        opacity:1;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(41, 244, 255, 0.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+}
+
+/* ZDANIE algebra */
+.algebra{
+    position:absolute;
+
+    top:65%;
+    left:70%;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #ff80ab,
+        #d81b60
+    );
+
+    color:white;
+
+    font-size:1.2rem;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 4px rgba(255,255,255,.9);
+
+    transition:.3s;
+
+    z-index:50;
+}
+.algebra.locked{
+    opacity:.75;
+}
+.algebra.locked{
+    animation:algebraGlow 4s infinite;
+}
+
+@keyframes algebraGlow{
+
+    0%,100%{
+        opacity:.75;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+    50%{
+        opacity:1;
+        box-shadow:
+            0 4px 10px rgba(0,0,0,.25),
+            0 0 15px rgba(255, 41, 248, 0.7),
+            0 0 0 4px rgba(255,255,255,.9);
+    }
+
+}

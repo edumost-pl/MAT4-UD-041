@@ -1,0 +1,208 @@
+/* style.css */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #dbeefc;
+  position: relative;
+}
+
+.city-screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.city-bg {
+  position: absolute;
+  inset: 0;
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.city-bg img {
+  width: 80%;
+}
+/* Заголовок */
+.city-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: white;
+
+  padding: 20px 40px;
+
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+
+  z-index: 10;
+}
+
+/* TEXT */
+h2 {
+  margin: 5px;
+  font-size: 1.4rem;
+}
+
+/* Панель совы */
+
+
+.guide-box {
+  position: relative;
+  top: -2%;
+  left: 0%;
+  width: 27%;
+  height: 420px;
+  z-index: 100;
+
+  opacity:1;
+  transition:all .8s ease;
+  transform:translateX(-20px);
+
+  animation:showGuide 1s ease forwards;
+  animation-delay:.5s;
+}
+
+@keyframes showGuide{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.guide-box.hide{
+    opacity:0;
+    transform:translateX(-50px);
+    transition:.8s;
+    pointer-events:none;
+    display: none;
+}
+
+
+.welcome-panel {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  width: 80%;
+  height: 280px;
+  padding: 3%;
+  background: #f6f1e3;
+  border-radius: 30px;
+  z-index: 10;
+  text-align: center;
+}
+.welcome-panel p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+/* sowa */
+.owl {
+  position: absolute;
+  left: -2%;
+  top: 40%;
+  width: 50%;
+  z-index: 30;
+}
+
+/* облачко с совой */
+.speech-bubble {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  width: 50%;
+  padding: 5%;
+  background: rgb(250, 248, 248);
+  box-shadow:
+    0 6px 8px rgba(0, 0, 0, 0.08),
+    0 12px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+  z-index: 25;
+}
+.speech-bubble p {
+  font-size: 1.2rem;
+  margin: 2%;
+}
+
+.owl-button{
+    position:absolute;
+
+    left:2%;
+    top:2%;
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
+    cursor:pointer;
+    /* z-index:200; */
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+.owl-button{
+    animation:owlIdle 3s infinite;
+}
+
+/*  */
+
+:root {
+  --guide-scale: 1;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --guide-scale: 0.8;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --guide-scale: 0.65;
+  }
+
+  /* Панель совы */
+
+  .guide-box {
+    transform: scale(var(--guide-scale));
+  }
+  h2{
+    font-size: 1rem;
+  }
+  .guide-box {
+    top: -2%;
+    left: -2%;
+    width: 50%;
+    height: 750px;
+  }
+  .welcome-panel {
+    /* top: 5%; */
+    /* left: 4%; */
+    width: 80%;
+    height: 200px;
+  }
+
+  /* sowa */
+  .owl {
+    position: absolute;
+    left: -2%;
+    top: 27%;
+  }
+
+  /* облачко с совой */
+  .speech-bubble {
+    left: 45%;
+    top: 30%;
+    width: 100%;
+  }
+}

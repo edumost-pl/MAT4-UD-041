@@ -1,0 +1,490 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#dbeefc;
+    color:#222;
+}
+
+/* ===================================
+   PAGE
+=================================== */
+
+.metro-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+}
+.metro-page{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.metro-bg{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+}
+
+.metro-page::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(255,255,255,.15);
+
+    z-index:-1;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.metro-header{
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:15px;
+}
+
+.back-btn{
+    border:none;
+    background:#fffaf0;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    font-size:1rem;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.line-title{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+
+    background:#6f47b8;
+    color:white;
+
+    padding:18px;
+
+    border-radius:25px;
+}
+
+.line-icon{
+    font-size:2rem;
+}
+
+.line-title h1{
+    font-size:1.8rem;
+}
+
+.help-box{
+
+    background:#fffaf0;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.help-box h3{
+    margin-bottom:10px;
+}
+
+/* ===================================
+   CONTENT
+=================================== */
+
+.metro-content{
+    display:flex;
+    gap:20px;
+    max-width: 100%;
+    padding:15px;
+    
+}
+
+/* ===================================
+   DISTRICTS
+=================================== */
+
+.districts-panel{
+
+    background:rgba(255,255,255,.92);
+    border-radius:30px;
+    padding:15px;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.city-logo{
+    width:80%;
+    display:block;
+
+    margin:0 auto 20px;
+}
+
+.district-card{
+
+    width:100%;
+
+    border:none;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px;
+
+    margin-bottom:10px;
+
+    border-radius:18px;
+
+    text-align:left;
+}
+
+.district-card.active{
+    border:3px solid #6f47b8;
+}
+
+.district-card.locked{
+    opacity:.55;
+}
+
+.district-icon{
+    width:50px;
+}
+
+.district-text{
+    flex:1;
+}
+
+.district-text h4{
+    margin-bottom:5px;
+}
+
+.district-status{
+
+    width:28px;
+    height:28px;
+
+    border-radius:50%;
+
+    background:#1da32e;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* цвета */
+
+.green{color:#228b22;}
+.blue{color:#0a5ecf;}
+.orange{color:#d56700;}
+.violet{color:#3f2b78;}
+.turquoise{color:#006f75;}
+.gold{color:#b78400;}
+.red{color:#c13022;}
+
+/* ===================================
+   WELCOME
+=================================== */
+
+.welcome-card{
+
+    background:#fffaf0;
+    border-radius:30px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.hero-owl{
+    width:150px;
+}
+.welcome-text{
+    padding: 2%;
+    
+}
+.welcome-text h2{
+    color:#3f2b78;
+    margin-bottom:15px;
+    text-align: center;
+}
+.welcome-text p{
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 90%;
+}
+
+.target-class{
+    background:#ece3ff;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+/* ===================================
+   STATIONS
+=================================== */
+
+.stations-panel{
+
+    background:#fffaf0;
+
+    border-radius:30px;
+
+    padding:20px;
+}
+
+.stations-panel h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#3f2b78;
+}
+
+.metro-line{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.station{
+
+    border:none;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-align:left;
+}
+
+.station-number{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:700;
+    font-size:1.3rem;
+
+    flex-shrink:0;
+}
+
+.station.completed .station-number{
+    background:#2fc62f;
+    color:white;
+}
+
+.station.current .station-number{
+    background:#6f47b8;
+    color:white;
+
+    border:4px solid #ffcf42;
+}
+
+.station.locked .station-number{
+    background:#d9d9d9;
+}
+
+.station-title{
+    font-weight:700;
+}
+
+.station-label{
+    margin-left:auto;
+}
+
+/* ===================================
+   BOTTOM
+=================================== */
+
+.bottom-grid{
+
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  
+}
+
+.small-owl-card,
+.legend-card{
+
+    background:#fffaf0;
+
+    border-radius:30px;
+
+    padding:20px;
+}
+
+.small-owl-card{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.small-owl-card img{
+    width:120px;
+}
+
+.legend-card h3{
+    margin-bottom:10px;
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media(max-width:768px){
+
+    .metro-header{
+        display:grid;
+
+        grid-template-columns:
+        220px
+        1fr;
+    }
+
+    .help-box{
+        grid-column:1/-1;
+    }
+
+    .welcome-card{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    .bottom-grid{
+        grid-template-columns:
+        1fr 1fr;
+    }
+    .metro-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+
+/* ===================================
+   DESKTOP
+=================================== */
+
+@media(min-width:1200px){
+
+    .metro-header{
+
+        grid-template-columns:
+        240px
+        1fr
+        300px;
+
+        align-items:start;
+    }
+
+    .help-box{
+        grid-column:auto;
+    }
+
+    .metro-content{
+
+        /* display:grid;
+
+        grid-template-columns:
+        420px
+        1fr;
+
+        gap:25px; */
+    } 
+
+    .metro-line{
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+        align-items:flex-start;
+    }
+
+    .station{
+
+        flex-direction:column;
+
+        width:120px;
+
+        background:transparent;
+    }
+
+    .station-label{
+        margin-left:0;
+    }
+
+}
