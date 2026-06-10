@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EduMost | Ułamek jako część całości</title>
+    <title>MAT4-UD-041</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleDistrict.css">
+    <link rel="stylesheet" href="styleNew.css">
+    <!-- <link rel="stylesheet" href="styleDistrict.css"> -->
 </head>
 
 <body>
@@ -16,109 +16,14 @@
     <div class="city-screen">
 
         <!-- Карта города -->
-        <img src="images/mat_EduMost.png" class="city-bg" alt="Miasto Matematyki">
-
-        <!-- Кнопка совы -->
-        <button class="owl-button">
-            🦉
-        </button>
-
-        <!-- Гид -->
-        <div class="guide-box">
-
-            <div class="welcome-panel">
-                <h2>WITAJ W MIEŚCIE MATEMATYKI!</h2>
-
-                <p>To miasto pełne wiedzy i przygód.</p>
-
-                <p>Wsiadaj do metra i odkrywaj kolejne dzielnice!</p>
-            </div>
-
-            <img class="owl" src="images/sowaMatematyka.png" alt="Sowa EduMost">
-
-            <div class="speech-bubble">
-
-                <p>
-                    Dzisiaj kontynuujemy naszą podróż
-                    w dzielnicy UŁAMKÓW.
-                </p>
-
-                <p>
-                    Twoja kolejna stacja:
-                    <strong>UŁAMKI DZIESIĘTNE</strong>
-                </p>
-
-            </div>
-
+        <img src="images/fon_miasto-matematyki.png" class="city-bg" alt="Miasto Matematyki">
+        
+        <!-- drobi, czesti -->
+        <div>
+            <a href="indexMetro.html" class="district-marker fractions current" id="fractionsMarker">
+                <span class="marker-ulamki" >Ułamki</span>
+            </a>
         </div>
-
-        <!-- Название города -->
-        <div class="city-title">
-            Miasto Matematyki
-        </div>
-
-        <!-- Метки районов -->
-
-        <button class="district-marker numbers completed" id="numbersMarker">
-            123
-        </button>
-        <!-- dejstwia -->
-        <button class="district-marker operations completed" id="operationsMarker">
-            <span>+−×÷</span>
-        </button>
-        <!-- welicziny -->
-        <button class="district-marker measures completed" id="measuresMarker">
-           <span> 📏</span>
-        </button>
-        <!-- drobi, czfsti -->
-        <div class="fractions">
-            <a href="indexMetro.html">Metro</a>
-            <button class="district-marker fractions current" id="fractionsMarker">
-            <span>🍕</span>
-        </button>
-        </div>
-        <!-- geometria violet -->
-        <button class="district-marker geometry locked" id="geometryMarker">
-            <span>📐</span>
-        </button>
-        <!-- dannye diagramy -->
-        <button class="district-marker data locked" id="dataMarker">
-            <span>📊</span>
-        </button>
-        <!-- algebra  -->
-        <button class="district-marker algebra locked" id="algebraMarker">
-            x²
-        </button>
-
-        <!-- Карточка района -->
-
-        <div class="district-card hidden">
-
-            <h3 id="districtTitle">
-                DZIELNICA UŁAMKÓW
-            </h3>
-
-            <div id="districtContent">
-
-                <p>✅ Ułamki zwykłe</p>
-                <p>🟡 Ułamki dziesiętne</p>
-                <p>⏳ Procenty</p>
-                <p>⏳ Liczby ujemne</p>
-
-            </div>
-
-        </div>
-
-        <!-- Верхнее меню -->
-
-        <button class="dictionary-btn">
-            📖
-        </button>
-
-        <button class="progress-btn">
-            🏆
-        </button>
-
     </div>
 
     <script src="script.js"></script>

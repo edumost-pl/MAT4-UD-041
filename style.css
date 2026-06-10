@@ -8,18 +8,15 @@ body {
 }
 
 .city-screen {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  position:relative;
+    width:min(1400px,100%);
+    margin:0 auto;
 }
 
 .city-bg {
-  position: absolute;
-  inset: 0;
-  width: 98%;
-  height: 100%;
-  margin: 0 auto;
-  object-fit: cover;
+  display:block;
+    width:100%;
+    height:auto;
 }
 .city-bg img {
   width: 80%;
@@ -205,4 +202,128 @@ h2 {
     top: 30%;
     width: 100%;
   }
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 900px){
+
+    .city-title{
+        font-size:1.6rem;
+        padding:15px 30px;
+    }
+
+    .guide-box{
+        transform:scale(.8);
+        transform-origin:top left;
+    }
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .city-title{
+
+        top:10px;
+
+        width:260px;
+
+        padding:12px;
+
+        font-size:1.1rem;
+
+        text-align:center;
+    }
+
+    .owl-button{
+
+        width:52px;
+        height:52px;
+
+        font-size:1.5rem;
+
+        top:10px;
+        left:10px;
+    }
+
+    /* прячем большую сову */
+
+    .guide-box{
+        display:none;
+    }
+
+    /* Маркеры */
+
+    .district-marker{
+
+        width:52px;
+        height:52px;
+
+        font-size:1rem;
+    }
+
+    .fractions{
+
+        width:72px;
+        height:72px;
+    }
+
+    .marker-ulamki{
+        font-size:1rem;
+    }
+
+    .fractions::after{
+        top:72px;
+        font-size:24px;
+    }
+
+    /* Координаты */
+
+    .numbers{
+        top:14%;
+        left:24%;
+    }
+
+    .operations{
+        top:13%;
+        left:43%;
+    }
+
+    .measures{
+        top:20%;
+        left:68%;
+    }
+
+    .fractions{
+        top:42%;
+        left:80%;
+    }
+
+    .geometry{
+        top:50%;
+        left:9%;
+    }
+
+    .algebra{
+        top:65%;
+        left:70%;
+    }
+
+    .data{
+        top:85%;
+        left:35%;
+    }
+
 }
