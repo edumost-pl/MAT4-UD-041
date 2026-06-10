@@ -1,0 +1,1137 @@
+/* ==========================================
+BLOK 1
+ROOT + BODY + GLOBAL
+========================================== */
+:root{
+    --mat-primary:#4A90E2;
+    --mat-primary-dark:#357ABD;
+    --mat-light:#EAF4FF;
+    --mat-border:#90CAF9;
+
+    --success:#43A047;
+    --danger:#E53935;
+    --warning:#FB8C00;
+
+    --text:#263238;
+    --text-light:#607D8B;
+
+    --card-bg:#FFFFFF;
+    --page-bg:#F6FAFF;
+
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+    --radius:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Nunito',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Nunito',sans-serif;
+    background:var(--page-bg);
+    color:var(--text);
+    line-height:1.2;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+/* ==========================================
+BLOK 2
+LESSON LAYOUT
+========================================== */
+main{
+    padding:20px;
+}
+
+.lesson-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.slide{
+    display:none;
+    animation:fadeSlide .4s ease;
+}
+
+.slide.active{
+    display:block;
+}
+
+@keyframes fadeSlide{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+/* ==========================================
+BLOK 3
+HERO CARD
+========================================== */
+.hero-card{
+    background:#fff;
+    border-radius:30px;
+    padding:60px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    border:3px solid var(--mat-border);
+}
+
+.hero-card h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:var(--mat-primary);
+}
+
+.hero-card h3{
+    margin-bottom:25px;
+    font-size:1.5rem;
+}
+
+.hero-card p{
+    font-size:1.3rem;
+    margin-bottom:15px;
+}
+
+.hero-card ul{
+    max-width:600px;
+    margin:30px auto;
+    text-align:left;
+    font-size:1.3rem;
+}
+
+.hero-card li{
+    margin-bottom:10px;
+}
+/* ==========================================
+BLOK 4
+STANDARD CARD
+========================================== */
+.card{
+    background:#fff;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:var(--shadow);
+    border:2px solid var(--mat-border);
+}
+
+.card h2{
+    color:var(--mat-primary);
+    margin-bottom:25px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color: rgb(134, 28, 192);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.card p{
+    margin-bottom:18px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* ==========================================
+BLOK 5
+BUTTONS
+========================================== */
+.btn{
+    border:none;
+    cursor:pointer;
+    transition:.25s;
+    border-radius:14px;
+    font-weight:700;
+    font-size:1rem;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:var(--mat-primary);
+    color:white;
+    padding:14px 30px;
+}
+
+.btn-primary:hover{
+    background:var(--mat-primary-dark);
+}
+
+.btn-secondary{
+    background:#ECEFF1;
+    color:var(--text);
+    padding:14px 30px;
+}
+
+.btn-answer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px auto;
+    background:#FFD54F;
+    color:#333;
+    padding:14px 25px;
+    width:fit-content;
+    border-radius:14px;
+}
+/* ==========================================
+BLOK 6
+NAVIGATION
+========================================== */
+.navigation{
+    margin-top:35px;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+/* ==========================================
+BLOK 7
+PROGRESS BAR
+========================================== */
+.progress-wrapper{
+    max-width:1100px;
+    margin:20px auto;
+}
+
+.progress-track{
+    height:18px;
+    background:#DCEFFF;
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:0;
+    background:linear-gradient(
+        90deg,
+        #4A90E2,
+        #6EB6FF
+    );
+    transition:.3s;
+}
+
+.progress-text{
+    text-align:center;
+    margin-top:8px;
+    font-weight:700;
+}
+/* ==========================================
+BLOK 8
+BACK BUTTON
+========================================== */
+.back-btn{
+    display:inline-block;
+    margin:15px;
+    color:var(--mat-primary-dark);
+    font-weight:700;
+}
+/* ==========================================
+BLOK 9
+COMMON HELPERS
+========================================== */
+.centr{
+    text-align:center;
+}
+
+.green{
+    color:var(--success);
+}
+
+.red{
+    color:var(--danger);
+}
+
+.p24{
+    font-size:24px;
+    font-weight:700;
+}
+
+.flex{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.lesson-image{
+    width:100%;
+    border-radius:20px;
+}
+/* ==========================================
+BLOK 10
+UKRAINIAN SUPPORT
+========================================== */
+.ua-box{
+    margin:20px 0;
+    border-radius:18px;
+    overflow:hidden;
+    border:2px solid #FFD54F;
+}
+
+.ua-trigger{
+    width:100%;
+    border:none;
+    background:#FFF8E1;
+    padding:14px;
+    cursor:pointer;
+    font-weight:700;
+    text-align:left;
+    font-size:1.3rem;
+    text-align: center;
+}
+
+.ua-content{
+    display:none;
+    background:#FFFDF5;
+    padding:18px;
+    border-top:1px solid #FFE082;
+}
+
+.ua-box.active .ua-content{
+    display:block;
+}
+
+.ua-content p{
+    margin-bottom:10px;
+}
+/* ==========================================
+BLOK 11
+OWL CARDS BASE
+========================================== */
+.owl-card{
+    margin-top:25px;
+    padding:20px;
+    border-radius:20px;
+    background:#F8FBFF;
+    border:2px solid var(--mat-border);
+}
+
+.rule-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+    justify-content: center;
+}
+
+.rule-title img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+
+.rule-title span{
+    font-size:1.6rem;
+    font-weight:800;
+}
+/* ==========================================
+BLOK 12
+OWL ZASADY
+========================================== */
+.owl-zasady{
+    background:#EAF4FF;
+    border-color:#4A90E2;
+}
+
+.owl-zasady span{
+    color:#357ABD;
+}
+/* ==========================================
+BLOK 13
+OWL REMEMBER
+========================================== */
+.owl-remember{
+    background:#E8F5E9;
+    border-color:#81C784;
+}
+
+.owl-remember span{
+    color:#2E7D32;
+}
+/* ==========================================
+BLOK 14
+OWL THINK
+========================================== */
+.owl-think{
+    background:#FFF8E1;
+    border-color:#FFD54F;
+}
+
+.owl-think span{
+    color:#F57F17;
+}
+/* ==========================================
+BLOK 15
+OWL WARNING
+========================================== */
+.owl-warning{
+    background:#FFEBEE;
+    border-color:#EF9A9A;
+}
+
+.owl-warning span{
+    color:#C62828;
+}
+/* ==========================================
+BLOK 16
+OWL MISSION
+========================================== */
+.owl-mission{
+    background:#F3E5F5;
+    border-color:#CE93D8;
+}
+
+.owl-mission span{
+    color:#7B1FA2;
+}
+/* ==========================================
+BLOK 17 SOWA PYTA
+========================================== */
+.owl-question{
+    background:#FFF8E1;
+}
+
+.question-box{
+    display:block;
+}
+
+.answer-box{
+    display:none;
+}
+
+.answer-box h4{
+    margin-bottom:15px;
+    color:var(--success);
+}
+/* ==========================================
+BLOK 18
+QUIZ BLOCK
+========================================== */
+.quiz-block{
+    margin:25px 0;
+    padding:25px;
+    background:#FAFCFF;
+    border:2px solid #D6E9FF;
+    border-radius:20px;
+}
+
+.quiz-block h3{
+    margin-bottom:15px;
+}
+
+.wopros{
+    font-weight:700;
+    margin:15px 0;
+}
+/* ==========================================
+BLOK 19
+ANSWERS
+========================================== */
+.answers{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:15px;
+}
+
+.quiz-answer{
+    border:none;
+    cursor:pointer;
+    padding:12px 18px;
+    border-radius:12px;
+    background:#EAF4FF;
+    transition:.25s;
+    font-weight:700;
+}
+
+.quiz-answer:hover{
+    transform:translateY(-2px);
+}
+
+.quiz-answer:disabled{
+    opacity:.85;
+    cursor:default;
+}
+/* ==========================================
+BLOK 20
+GOOD / BAD ANSWERS
+========================================== */
+.good-btn{
+    background:#4CAF50 !important;
+    color:white;
+}
+
+.bad-btn{
+    background:#EF5350 !important;
+    color:white;
+}
+
+.good-answer{
+    color:#2E7D32;
+    font-weight:700;
+    margin-top:15px;
+}
+
+.bad-answer{
+    color:#C62828;
+    font-weight:700;
+    margin-top:15px;
+}
+
+.task-result{
+    margin-top:15px;
+}
+/* ==========================================
+BLOK 21
+WORD CARDS
+========================================== */
+.word-card{
+    background:white;
+    border:2px solid #D6E9FF;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.word-card h3{
+    color:var(--mat-primary);
+}
+/* ==========================================
+BLOK 22
+VOCAB GRID
+========================================== */
+.vocab-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+/* ==========================================
+BLOK 23
+DECIMAL GRID
+========================================== */
+.decimal-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin:25px 0;
+}
+/* ==========================================
+BLOK 24
+DECIMAL CARD
+========================================== */
+
+/* .decimal-card{
+    background:#EAF4FF;
+    border:2px solid #90CAF9;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    font-size:2rem;
+    font-weight:800;
+    color:#357ABD;
+} */
+
+/* ==========================================
+BLOK 25
+FRACTION CARDS
+========================================== */
+
+.fraction-card{
+    background:white;
+    border:2px solid #90CAF9;
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    font-size:1.7rem;
+    font-weight:800;
+    min-width:120px;
+}
+
+/* ==========================================
+BLOK 26
+DECIMAL ROW
+========================================== */
+.decimal-row{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:25px 0;
+}
+/* ==========================================
+BLOK 27
+DECIMAL COMPARE
+========================================== */
+.decimal-compare{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    margin:35px 0;
+}
+
+/* .decimal-box{
+    background:#EAF4FF;
+    border:3px solid #90CAF9;
+    border-radius:20px;
+    padding:25px 35px;
+    font-size:2rem;
+    font-weight:800;
+} */
+
+.decimal-arrow{
+    font-size:2rem;
+    font-weight:800;
+}
+.decimal-notebook{
+    display: flex;
+    max-width: 30%;
+    margin: 0 auto;
+}
+/* ==========================================
+BLOK 28
+DECIMAL SCHEME
+========================================== */
+.decimal-scheme{
+    max-width:700px;
+    margin:30px auto;
+}
+
+/* .scheme-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+    margin-bottom:12px;
+    background:#F7FBFF;
+    border:2px solid #D6E9FF;
+    border-radius:16px;
+    font-size:1.3rem;
+    font-weight:700;
+} */
+
+/* ==========================================
+BLOK 29
+BIG EXAMPLES
+========================================== */
+.decimal-example-big{
+    text-align:center;
+    font-size:3rem;
+    font-weight:800;
+    color:#357ABD;
+    margin:30px 0;
+}
+/* ==========================================
+BLOK 30 - проверка поля для вписывания
+========================================== */
+
+.decimal-task{
+    background:#FAFCFF;
+    border:2px solid #90CAF9;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
+.decimal-exercise{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:18px 0;
+}
+
+.fraction{
+    font-size:2rem;
+    font-weight:800;
+    min-width:90px;
+}
+
+.decimal-check{
+    width:120px;
+    padding:12px;
+    text-align:center;
+    font-size:1.4rem;
+    font-weight:700;
+    border:2px solid #90CAF9;
+    border-radius:12px;
+}
+
+.decimal-check.good{
+    border-color:#4CAF50;
+    background:#E8F5E9;
+}
+
+.decimal-check.bad{
+    border-color:#E53935;
+    background:#FFEBEE;
+}
+
+#decimalResult{
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:700;
+}
+/* дробь */
+.school-fraction{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-width:90px;
+    font-weight:800;
+  
+}
+.school-fraction span{
+    font-size:2.2rem;
+    height: auto;
+}
+.school-fraction .top{
+    font-size:2.2rem;
+    line-height:1;
+    border-bottom:4px solid #222;
+    padding:0 12px 6px;
+}
+
+.school-fraction .bottom{
+    font-size:2.2rem;
+    line-height:1;
+    padding-top:6px;
+}
+
+/* ==========================================
+BLOK 31
+NOTEBOOK CELLS
+========================================== */
+.cell{
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid #90CAF9;
+    background:white;
+    font-size:1.8rem;
+    font-weight:800;
+    border-radius:8px;
+}
+
+.cell.zero{
+    color:#EF5350;
+}
+/* ==========================================
+BLOK 32
+INPUT CELLS
+========================================== */
+.decimal-input{
+    width:55px;
+    height:55px;
+    text-align:center;
+    border:2px solid #90CAF9;
+    border-radius:8px;
+    font-size:1.8rem;
+    font-weight:800;
+    outline:none;
+}
+
+.decimal-input:focus{
+    border-color:#357ABD;
+    box-shadow:0 0 0 4px rgba(74,144,226,.15);
+}
+/* ==========================================
+BLOK 33
+EXERCISE BOX
+========================================== */
+.exercise-box{
+    background:#FAFCFF;
+    border:2px solid #D6E9FF;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.exercise-box p{
+    font-size:1.2rem;
+}
+
+.hint{
+    color:#607D8B;
+    margin-top:15px;
+}
+/* ==========================================
+BLOK 34
+READING GRID
+========================================== */
+.reading-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+/* ==========================================
+BLOK 35
+READING CARD
+========================================== */
+.reading-card{
+    background:white;
+    border:2px solid #D6E9FF;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.reading-card h3{
+    color:#357ABD;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+/* ==========================================
+BLOK 36
+DECIMAL WORD GRID
+========================================== */
+.decimal-word-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+/* ==========================================
+BLOK 37
+METRO
+========================================== */
+.metro-line{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin:40px 0;
+    flex-wrap:wrap;
+}
+
+.metro-station{
+    width:180px;
+    min-height:120px;
+    background:white;
+    border:3px solid #4A90E2;
+    border-radius:25px;
+    text-align:center;
+    padding:20px;
+    font-weight:800;
+    font-size:1.1rem;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.metro-station:hover{
+    transform:translateY(-4px);
+}
+
+.metro-station::before{
+    content:"🚇";
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+/* ==========================================
+BLOK 38
+MOST WIEDZY
+========================================== */
+.bridge-info{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:30px;
+    align-items:center;
+    margin:30px 0;
+}
+
+.bridge-info img{
+    width:100%;
+    max-width:220px;
+    margin:auto;
+}
+/* ==========================================
+BLOK 39
+SUMMARY LIST
+========================================== */
+.summary-list{
+    list-style:none;
+    margin:25px 0;
+}
+
+.summary-list li{
+    padding:12px 0;
+    border-bottom:1px solid #E3F2FD;
+    font-size:1.05rem;
+}
+/* ==========================================
+BLOK 40
+FACT BOX
+========================================== */
+.fact-box{
+    background:#FFF8E1;
+    border:2px solid #FFD54F;
+    border-radius:18px;
+    padding:20px;
+    margin:20px 0;
+}
+
+.fact-box h3{
+    color:#F57F17;
+    margin-bottom:10px;
+}
+/* ==========================================
+BLOK 41
+WARNING BOX
+========================================== */
+.warning-box{
+    background:#FFEBEE;
+    border:2px solid #EF9A9A;
+    border-radius:18px;
+    padding:20px;
+}
+/* ==========================================
+BLOK 42
+IMAGE ZOOM
+========================================== */
+.image-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.image-overlay img{
+    max-width:95%;
+    max-height:95%;
+    border-radius:20px;
+}
+/* ==========================================
+BLOK 43
+FOOTER
+========================================== */
+footer{
+    text-align:center;
+    padding:30px 15px;
+    color:#607D8B;
+    font-size:.95rem;
+}
+/* ==========================================
+BLOK 44
+TABLET 992px
+========================================== */
+@media(max-width:992px){
+
+.hero-card{
+    padding:40px;
+}
+
+.hero-card h1{
+    font-size:2.4rem;
+}
+
+.bridge-info{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.grid-2{
+    grid-template-columns:1fr;
+}
+
+.decimal-grid{
+    grid-template-columns:1fr;
+}
+
+.decimal-compare{
+    flex-direction:column;
+}
+
+.metro-line{
+    gap:15px;
+}
+
+}
+/* ==========================================
+BLOK 45
+MOBILE 768px
+========================================== */
+@media(max-width:768px){
+
+main{
+    padding:10px;
+}
+
+.card{
+    padding:20px;
+}
+
+.hero-card{
+    padding:25px;
+}
+
+.hero-card h1{
+    font-size:2rem;
+}
+
+.hero-card h3{
+    font-size:1.2rem;
+}
+
+.navigation{
+    flex-direction:column;
+}
+
+.navigation .btn{
+    width:100%;
+}
+
+.rule-title{
+    flex-direction:column;
+    text-align:center;
+}
+
+.rule-title img{
+    width:60px;
+    height:60px;
+}
+
+.decimal-example-big{
+    font-size:2rem;
+}
+
+/* .scheme-row{
+    font-size:1rem;
+    padding:14px;
+} */
+
+.decimal-row{
+    flex-direction:column;
+    align-items:center;
+}
+
+.answers{
+    flex-direction:column;
+}
+
+.quiz-answer{
+    width:100%;
+}
+
+.metro-station{
+    width:100%;
+}
+
+.reading-grid{
+    grid-template-columns:1fr;
+}
+
+.decimal-word-grid{
+    grid-template-columns:1fr;
+}
+
+.vocab-grid{
+    grid-template-columns:1fr;
+}
+
+}
+/* ==========================================
+BLOK 46
+SMALL MOBILE 480px
+========================================== */
+@media(max-width:480px){
+
+.hero-card h1{
+    font-size:1.7rem;
+}
+
+.hero-card h3{
+    font-size:1rem;
+}
+
+.card h2{
+    font-size:1.4rem;
+}
+
+.decimal-example-big{
+    font-size:1.6rem;
+}
+
+.cell,
+.decimal-input{
+    width:42px;
+    height:42px;
+    font-size:1.2rem;
+}
+
+.decimal-box{
+    /* font-size:1.4rem;
+    padding:15px; */
+}
+
+.fraction-card{
+    min-width:90px;
+    font-size:1.2rem;
+}
+
+.reading-card h3{
+    font-size:1.5rem;
+}
+
+.progress-text{
+    font-size:.9rem;
+}
+
+}
+/* ==========================================
+BLOK 47
+EXTRA SAFETY FOR LONG POLISH TEXT
+========================================== */
+p,
+li,
+button,
+.quiz-answer{
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+.card,
+.hero-card{
+    overflow:hidden;
+}

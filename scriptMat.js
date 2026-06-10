@@ -432,3 +432,62 @@ document.addEventListener("click", function(e){
     }
 
 });
+
+// проверка поля для вписания
+function checkDecimals(){
+
+    const fields =
+        document.querySelectorAll(
+            ".decimal-check"
+        );
+
+    let allCorrect = true;
+
+    fields.forEach(field=>{
+
+        field.classList.remove(
+            "good",
+            "bad"
+        );
+
+        const userAnswer =
+            field.value
+            .trim();
+
+        const correctAnswer =
+            field.dataset.answer;
+
+        if(userAnswer === correctAnswer){
+
+            field.classList.add(
+                "good"
+            );
+
+        }else{
+
+            field.classList.add(
+                "bad"
+            );
+
+            allCorrect = false;
+        }
+
+    });
+
+    const result =
+        document.getElementById(
+            "decimalResult"
+        );
+
+    if(allCorrect){
+
+        result.innerHTML =
+        "🎉 Brawo! Wszystkie odpowiedzi są poprawne.";
+
+    }else{
+
+        result.innerHTML =
+        "❌ Spróbuj jeszcze raz.";
+    }
+
+}

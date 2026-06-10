@@ -4,20 +4,17 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-        EduMost | MAT4-UZ-034 | Ułamek jako część całości
-    </title>
+    <title> MAT4-UD-041 | Ułamek dziesiętny</title>
 
     <!-- Fonts -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="styleMat.css">
+    <link rel="stylesheet" href="styleMat41.css">
 </head>
 
 <body>
@@ -26,7 +23,8 @@
     POWRÓT
     ================================================== -->
 
-    <a href="index.html" class="back-btn">← Powrót do strony głównej</a>
+    <a href="indexEkran3.html" class="back-btn">← Powrót do STACJA: 4 KLASA - LINIA UŁAMKÓW</a><span>|</span>
+    <a href="indexMetro.html" class="back-btn"> ← Powrót do LINIA UŁAMKÓW</a>
 
     <!-- ==================================================
     PROGRESS BAR
@@ -47,21 +45,22 @@
     ================================================== -->
 
     <main>
-
         <!-- ==========================================
-        SLIDE 1  HERO
+        SLIDE 1 — OKŁADKA
         ========================================== -->
         <section class="slide active" id="slide1">
             <div class="lesson-container">
                 <div class="hero-card">
-                    <h1>🍕 Ułamek jako część całości</h1>
-                    <h3>🔍 Odkrywamy świat ułamków!</h3>
-                    <p> W tej lekcji dowiesz się, czym jest ułamek i jak pokazuje część całości.</p>
+                    <h1>📐 Ułamek dziesiętny</h1>
+                    <h3>🧩 Od zwykłych ułamków do dziesiętnych</h3>
+
+                    <p>W tej lekcji odkryjesz nowy rodzaj ułamków. Dowiesz się, dlaczego 1/10 można zapisać jako 0,1.
+                    </p>
 
                     <ul>
-                        <li>✅ poznasz pojęcie całości i części</li>
-                        <li>✅ nauczysz się rozpoznawać ułamki</li>
-                        <li>✅ wykonasz misję Sowy EduMost</li>
+                        <li>✅ przypomnisz sobie ułamki zwykłe</li>
+                        <li>✅ poznasz ułamek dziesiętny</li>
+                        <li>✅ nauczysz się odczytywać liczby dziesiętne</li>
                     </ul>
 
                     <button class="btn btn-primary" onclick="nextSlide()">
@@ -71,43 +70,41 @@
             </div>
         </section>
         <!-- ==========================================
-        SLIDE 2
-        JUŻ ZNASZ
+        SLIDE 2 — JUŻ ZNASZ 
         ========================================== -->
         <section class="slide" id="slide2">
             <div class="lesson-container">
                 <div class="card section-lesson">
                     <h2>🦉 Już znasz</h2>
-                    <div class="grid-2">
-                        <div>
-                            <ul>
-                                <li>🔢 umiesz liczyć</li>
-                                <li>🍎 potrafisz dzielić przedmioty na części</li>
-                                <li>🍕 wiesz, że pizzę można pokroić na kawałki</li>
-                                <li>⚖️ rozumiesz, co znaczy „po równo”</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <img src="image/juz-znasz.png" class="lesson-image zum">
+                    <p>Przypomnijmy sobie kilka ułamków zwykłych.</p>
+                    <div class="decimal-row">
+                        <img src="images/slide2.png" alt="">
+                    </div>
+                    <p>Każdy z nich pokazuje część całości.</p>
+                    <!-- ua -->
+                    <div class="ua-box">
+                        <button class="ua-trigger">
+                            🇺🇦 Українською
+                        </button>
+                        <div class="ua-content">
+                            <p>Кожен дріб показує частину цілого.</p>
+
                         </div>
                     </div>
-                    <div class="owl-card owl-remember">
+
+                    <div class="owl-card owl-zasady">
                         <div class="rule-title">
-                            <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
-                            <span>
-                                Zapamiętaj
-                            </span>
+                            <img src="images/sowa_zasady.png">
+                            <span>Najważniejsza zasada</span>
                         </div>
-                        <p>
-                            Wszystkie nowe wiadomości
-                            budujemy na tym,
-                            co już wiemy.
-                        </p>
+                        <p>Ułamek pokazuje część całości.</p>
                     </div>
+
                     <div class="navigation">
                         <button class="btn btn-secondary" onclick="prevSlide()">
                             ← Wstecz
                         </button>
+
                         <button class="btn btn-primary" onclick="nextSlide()">
                             Dalej →
                         </button>
@@ -116,512 +113,518 @@
             </div>
         </section>
         <!-- ==========================================
-        SLIDE 3
-        CZEGO SIĘ NAUCZYSZ
+        SLIDE 3 — PROBLEM.  
         ========================================== -->
         <section class="slide" id="slide3">
             <div class="lesson-container">
                 <div class="card section-lesson">
-                    <h2>🎯 Czego się nauczysz</h2>
-                    <div class="grid-3">
-                        <div class="word-card">
-                            <h3>🍕</h3>
-                            <p>rozpoznawać części całości</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>➗</h3>
-                            <p>rozumieć, czym jest ułamek</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>🔢</h3>
-                            <p>odczytywać proste ułamki</p>
-                        </div>
-                    </div>
-                    <div class="owl-card owl-think">
+                    <div class="owl-card owl-question">
+                        <div class="question-box">
+                            <div class="rule-title">
+                                <img src="images/sowa_pomysl.png">
+                                <span>Pomyśl</span>
+                            </div>
+                            <div class="image" style="width: 20%;margin: 0 auto;">
+                                <img src="images/szokolad_1_10.png" class="lesson-image zum">
+                            </div>
 
-                        <div class="rule-title">
-                            <img src="image/sowa_misia.png" alt="Sowa EduMost">
-                            <span>Misja na dziś</span>
+                            <p>Tabliczka czekolady ma 10 równych części.</p>
+                            <p>Zaznaczyliśmy tylko jedną część.</p>
+                            <p>Jaki ułamek otrzymamy?</p>
                         </div>
-                        <p>Na końcu lekcji będziesz potrafił powiedzieć:</p>
-                        <p><strong>„To jest jedna część z czterech części.”</strong></p>
+                        <div class="answer-box" style="display:none;">
+                            <h4>💡 Odpowiedź</h4>
+                            <p class="green p24">
+                                1/10
+                            </p>
+                            <p>To jedna dziesiąta.</p>
+                        </div>
+
+                        <button class="btn btn-answer show-answer">
+                            💡 Sprawdź odpowiedź
+                        </button>
+
                     </div>
+
                     <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
-                        <button class="btn btn-primary" onclick="nextSlide()"> Dalej →</button>
+                        <button class="btn btn-secondary" onclick="prevSlide()">
+                            ← Wstecz
+                        </button>
+
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            Dalej →
+                        </button>
                     </div>
+
                 </div>
             </div>
+
         </section>
         <!-- ==========================================
-        SLIDE 4
-        NOWE SŁOWA
+        SLIDE 4 — PO CO NOWY ZAPIS.   
         ========================================== -->
 
         <section class="slide" id="slide4">
             <div class="lesson-container">
                 <div class="card section-lesson">
-                    <h2>📚 Nowe słowa</h2>
-                    <p style="text-align:center;">Poznaj słowa, które będą nam potrzebne podczas lekcji.</p>
-                    <div class="vocab-grid">
-                        <div class="word-card">
-                            <h3>🍕 Całość</h3>
-                            <p>Ціле</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>🧩 Część</h3>
-                            <p>Частина</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>⚖️ Równe części</h3>
-                            <p>Рівні частини</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>➗ Ułamek</h3>
-                            <p>Дріб</p>
-                        </div>
+                    <h2>🤔 Po co wymyślono ułamki dziesiętne?</h2>
+                    <div class="decimal-compare">
+                        <img src="images/slide4.png" alt="" style="width: 70%;">
                     </div>
-                    <div class="owl-card owl-remember">
-                        <div class="rule-title">
-                            <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
-                            <span>Zapamiętaj</span>
-                        </div>
-                        <p>Te słowa będą wracały
-                            w kolejnych lekcjach matematyki.</p>
-                    </div>
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
-                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
-        SLIDE 5
-        CO TO JEST CAŁOŚĆ
-        ========================================== -->
-
-        <section class="slide" id="slide5">
-            <div class="lesson-container">
-                <div class="card section-lesson">
-                    <h2>🟢 Co to jest całość?</h2>
-                    <div class="grid-2">
-                        <div>
-                            <p>🍕 Wyobraź sobie pizzę.</p>
-                            <p>Jeszcze jej nie pokroiłeś.</p>
-                            <p>Masz całą pizzę.</p>
-                            <p>To właśnie jest
-                                <strong>całość</strong>.
-                            </p>
-                            <br>
-                            <p> W matematyce całość oznacza coś, co jeszcze nie zostało podzielone.</p>
-                            <!-- ua -->
-                            <div class="ua-box">
-                                <button class="ua-trigger">🇺🇦 Українською</button>
-                                <div class="ua-content">
-                                    <p>🍕 Уяви піцу. </p>
-                                    <p>Ти ще її не розрізав.</p>
-                                    <p>У тебе є вся піца.</p>
-                                    <p>Це і є <b>ціле</b>.</p>
-                                    <p>У математиці ціле — це те, що ще не поділили на частини.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="image/calosc.png" class="lesson-image zum" alt="Całość">
-                        </div>
-                    </div>
-                    <div class="owl-card owl-remember">
-                        <div class="rule-title">
-                            <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
-                            <span>
-                                Zapamiętaj
-                            </span>
-                        </div>
-                        <p>Dopóki niczego nie podzielimy, mamy jedną całość.</p>
-                    </div>
-
-                    <!-- end ua -->
-
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ==========================================
-        SLIDE 6
-        RÓWNE CZĘŚCI
-        ========================================== -->
-
-        <section class="slide" id="slide6">
-            <div class="lesson-container">
-                <div class="card section-lesson">
-                    <h2>🟡 Dzielimy całość na części</h2>
-                    <div class="grid-2">
-                        <div>
-                            <img src="image/slide2.png" class="lesson-image zum" alt="Równe części">
-                        </div>
-                        <div style="margin-left: 2%;">
-                            <p>🍕 Teraz pokroiliśmy pizzę.</p>
-                            <p>Nie mamy już jednej całości.</p>
-                            <p>Mamy kilka części.</p>
-                            <p>Wszystkie kawałki są takie same.</p>
-                            <p>To są <strong>równe części</strong>.</p>
-                            <!-- ua -->
-                            <div class="ua-box">
-                                <button class="ua-trigger">🇺🇦 Українською</button>
-                                <div class="ua-content">
-                                    <p>
-                                        🍕 Тепер ми розрізали піцу.
-                                    </p>
-
-                                    <p>
-                                        У нас вже немає одного цілого.
-                                    </p>
-
-                                    <p>
-                                        Тепер у нас є кілька частин.
-                                    </p>
-
-                                    <p>
-                                        Усі шматочки однакові.
-                                    </p>
-
-                                    <p>
-                                        Це рівні частини.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rule-box">
-                        <div class="rule-title" style="margin-top: -20px;">
-                            <img src="image/sowa_zasady.png" alt="Sowa EduMost" style="width: 200px;height: 200px;">
-                        </div>
-                        <p>
-                            Ułamki tworzymy tylko wtedy,
-                            gdy całość została podzielona
-                            na równe części.
-                        </p>
-                        <div class="ua-box">
-                            <button class="ua-trigger">🇺🇦 Українською</button>
-                            <div class="ua-content">
-                                <p> Дріб можна записати лише тоді, коли ціле поділено на <b>рівні частини</b>.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-card owl-warning">
-                        <div class="rule-title">
-                            <img src="image/sowa_uwazaj.png" alt="Sowa EduMost">
-                            <span>
-                                Uważaj
-                            </span>
-                        </div>
-                        <p>Jeśli jeden kawałek jest większy,
-                            a drugi mniejszy, nie możemy poprawnie zapisać ułamka.</p>
-                        <div class="ua-box">
-                            <button class="ua-trigger">🇺🇦 Українською</button>
-                            <div class="ua-content">
-                                <p> Якщо частини мають <b>різний розмір</b>, ми <b>не можемо</b> правильно записати
-                                    <b>дріб</b>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ==========================================
-        SLIDE 7
-        CO TO JEST UŁAMEK
-        ========================================== -->
-
-        <section class="slide" id="slide7">
-            <div class="lesson-container">
-                <div class="card section-lesson">
-                    <h2>🔵 Co to jest ułamek?</h2>
-                    <div class="grid-2">
-                        <div>
-                            <img src="image/pizza_1_4.png" class="lesson-image zum" alt="Jedna czwarta">
-                        </div>
-                        <div>
-                            <p>🍕 Pizza została podzielona
-                                na 4 równe części.</p>
-                            <p>Zaznaczyliśmy tylko jeden kawałek.</p>
-                            <p>To już nie jest cała pizza.</p>
-                            <p>To jedna z czterech części.</p>
-                            <p>Taki zapis nazywamy
-                                <strong>ułamkiem</strong>.
-                            </p>
-                            <!-- ua -->
-                            <div class="ua-box">
-                                <button class="ua-trigger">🇺🇦 Українською</button>
-                                <div class="ua-content">
-                                    <p>🍕 Піцу поділили на 4 рівні частини.</p>
-                                    <p>Ми виділили лише один шматочок.</p>
-                                    <p>Це вже не ціла піца.</p>
-                                    <p>Це одна з чотирьох частин.</p>
-                                    <p>Такий запис називається дробом.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-card owl-think">
-                        <div class="rule-title" style="margin-top: -20px;">
-                            <img src="image/sowa_mowi.png" alt="Sowa EduMost" style="width: 200px;height: 200px;">
-                        </div>
-                        <p>Ułamek pokazuje,
-                            jaką część całości mamy.</p>
-                    </div>
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
-        SLIDE 8
-        JAK ZAPISUJEMY UŁAMEK
-        ========================================== -->
-
-        <section class="slide" id="slide8">
-            <div class="lesson-container">
-                <div class="card section-lesson">
-                    <h2>🔢 Jak zapisujemy ułamek?</h2>
-                    <div class="grid-2">
-                        <div><img src="image/pizza_1_4_2.png" class="lesson-image zum">
-                        </div>
-                        <div>
-                            <p> Mamy jedną część z czterech części.</p>
-                            <p>Matematycy zapisują to tak:</p>
-                            <div class="fraction">
-                                1
-                                <hr>
-                                4
-                            </div>
-                            <p>Czytamy:</p>
-                            <h3>jedna czwarta</h3>
-                        </div>
-                    </div>
-                    <div class="rule-box">
-                        <div class="rule-title" style="margin-top: -20px;">
-                            <img src="image/sowa_zasady.png" alt="Sowa EduMost" style="width: 200px;height: 200px;">
-                        </div>
-                        <p>1 część z 4 części to jedna czwarta.</p>
-                    </div>
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ==========================================
-        SLIDE 9
-        SOWA PYTA
-        ========================================== -->
-
-        <section class="slide" id="slide9">
-            <div class="lesson-container">
-                <div class="card section-lesson">
-                    <h2>🔢 Licznik i mianownik</h2>
-                    <div class="fraction" style="font-size:70px;width:140px;">
-                        1
-                        <hr>
-                        4
-                    </div>
-                    <br>
-                    <div class="grid-2">
-                        <div class="word-card">
-                            <h3>⬆️ Licznik</h3>
-                            <p>Liczba na górze.</p>
-                            <p>Pokazuje, ile części bierzemy.</p>
-                            <h2>1</h2>
-                        </div>
-                        <div class="word-card">
-                            <h3>⬇️ Mianownik</h3>
-                            <p>Liczba na dole.</p>
-                            <p>Pokazuje, na ile części
-                                podzielono całość.</p>
-                            <h2>4</h2>
-                        </div>
-                    </div>
-                    <div class="owl-card owl-remember">
-                        <div class="rule-title">
-                            <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
-                            <span>
-                                Zapamiętaj
-                            </span>
-                        </div>
-                        <p>
-                            Najpierw patrzymy,
-                            na ile części podzielono całość.
-                        </p>
-                        <p>
-                            Potem sprawdzamy,
-                            ile części zostało zaznaczonych.
-                        </p>
+                    <p>Oba zapisy oznaczają dokładnie to samo.</p>
+                    <p>Drugi zapis jest krótszy.</p>
+                    <p>Dlatego matematycy stworzyli ułamki dziesiętne.</p>
+                    <h3>Ułamki dziesiętne to kolejna interesująca część świata matematyki, gdzie zamiast liczników i
+                        mianowników posługujemy się liczbami zapisywanymi po przecinku.</h4>
+                        <p>Zamiast kreski ułamkowej, używa się przecinka, który oddziela część całkowitą, od części
+                            ułamkowej liczby. W przypadku ułamków właściwych, liczba całkowita to 0.</p>
                         <!-- ua -->
                         <div class="ua-box">
-                            <button class="ua-trigger">🇺🇦 Українською</button>
+                            <button class="ua-trigger">
+                                🇺🇦 Українською
+                            </button>
+
                             <div class="ua-content">
-                                <p>Спочатку ми дивимося, <b>на скільки частин поділили ціле</b>.</p>
-                                <p>Потім перевіряємо, скільки частин було виділено.</p>
+                                <p>Обидва записи означають одне й те саме.</p>
+                                <p> Другий запис коротший.</p>
+                                <h3>Десяткові дроби — це ще одна цікава частина світу математики, де замість чисельника
+                                    і знаменника ми використовуємо числа, записані після коми.</h4>
+                                    <p>Замість риски дробу ми використовуємо кому. Кома відокремлює цілу частину від
+                                        дробової. Якщо дріб менший за 1, то перед комою записують 0.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ==========================================
-        SLIDE 10
-        UŁAMKI WOKÓŁ NAS
-        ========================================== -->
-
-        <section class="slide" id="slide10">
-            <div class="lesson-container">
-                <div class="card section-lesson">
-
-                    <div class="owl-card owl-think owl-question">
-                        <div class="question-box">
-                            <div class="rule-title">
-                                <img src="image/sowa_pomysl.png" alt="Sowa EduMost">
-                                <span>Pomyśl</span>
-                            </div>
-                            <h4></h4>
-                            <p>
-                                🍕 Pizza została podzielona
-                                na 8 równych części.
-                            </p>
-                            <p>
-                                Jeśli zjesz 1 kawałek,
-                                czy zjesz całą pizzę?
-                            </p>
-                        </div>
-                        <div class="answer-box" style="display:none;">
-                            <h4>💡 Odpowiedź</h4>
-                            <p class="green">
-                                Nie.
-                            </p>
-                            <p>
-                                Jeden kawałek to tylko
-                                część całej pizzy.
-                            </p>
-                        </div>
-                        <br>
-                        <button class="btn btn-answer show-answer">
-                            💡 Sprawdź odpowiedź
-                        </button>
-                    </div>
-                    <div class="owl-card owl-remember">
-                        <div class="question-box">
-                            <div class="rule-title">
-                                <img src="image/sowa_co_juz_wiem.png" alt="Sowa EduMost">
-                                <span>Co już wiemy?</span>
-                            </div>
-                            <p>Ułamek pokazuje część całości.
-                            </p>
                         </div>
                         <div class="navigation">
                             <button class="btn btn-secondary" onclick="prevSlide()">
                                 ← Wstecz
                             </button>
+
                             <button class="btn btn-primary" onclick="nextSlide()">
                                 Dalej →
                             </button>
                         </div>
-                    </div>
+
                 </div>
+            </div>
+
         </section>
 
         <!-- ==========================================
-        SLIDE 11
-        UWAŻAJ
+        SLIDE 5 — CO TO JEST UŁAMEK DZIESIĘTNY. 
         ========================================== -->
+        <section class="slide" id="slide5">
 
-        <section class="slide" id="slide11">
             <div class="lesson-container">
                 <div class="card section-lesson">
-                    <h2>🌍 Ułamki wokół nas</h2>
-                    <p style="text-align:center;">
-                        Ułamki spotykamy każdego dnia.
+                    <h2>📐 Co to jest ułamek dziesiętny?</h2>
+                    <p>
+                        Ułamek dziesiętny zapisujemy za pomocą przecinka.
                     </p>
-                    <br>
-                    <div class="math-object-grid">
-                        <div class="math-object-card">
-                            <img src="image/pizza-1-8.png" alt="Pizza">
-                            <h3>1/8 pizzy</h3>
-                        </div>
-                        <div class="math-object-card">
-                            <img src="image/chocolate-2-6.png" alt="Czekolada">
-                            <h3>2 kostki</h3>
-                        </div>
-                        <div class="math-object-card">
-                            <img src="image/cake-slice.png" alt="Tort">
-                            <h3>Kawałek tortu</h3>
-                        </div>
-                        <div class="math-object-card">
-                            <img src="image/apple-half.png" alt="Jabłko">
-                            <h3>Połówka jabłka</h3>
+                    <p>
+                        Powstaje z ułamków,
+                        których mianownik wynosi: <span class="p24 red">10, 100, 1000</span>
+                    </p>
+                    <div class="decimal-grid">
+                        <img src="images/slide5_1.png" alt="">
+                        <img src="images/slide5_2.png" alt="">
+                        <img src="images/slide5_3.png" alt="">
+                    </div>
+
+                    <div class="ua-box">
+                        <button class="ua-trigger">
+                            🇺🇦 Українською
+                        </button>
+                        <div class="ua-content">
+                            <p>Десяткові дроби мають знаменник:
+                                10, 100 або 1000.</p>
                         </div>
                     </div>
-                    <br>
-                    <div class="fact-box">
-                        <h3>💡 Czy wiesz?</h3>
+                    <div class="owl-card owl-zasady">
+                        <div class="rule-title">
+                            <img src="images/sowa_zasady.png">
+                            <span>Najważniejsza zasada</span>
+                        </div>
                         <p>
-                            Kiedy dzielisz coś na równe części,
-                            bardzo często używasz ułamków.
+                            Ułamki dziesiętne mają mianownik
+                            <span class="p24 red">10, 100</span> lub <span class="p24 red">1000</span>.
                         </p>
                     </div>
+
                     <div class="navigation">
                         <button class="btn btn-secondary" onclick="prevSlide()">
                             ← Wstecz
                         </button>
+
                         <button class="btn btn-primary" onclick="nextSlide()">
                             Dalej →
                         </button>
                     </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ==========================================
+        SLIDE 6 — NOWE SŁOWA.  
+        ========================================== -->
+        <section class="slide" id="slide6">
+
+            <div class="lesson-container">
+                <div class="card section-lesson">
+                    <h2>📚 Nowe słowa</h2>
+                    <div class="decimal-word-grid">
+                        <div class="word-card">
+                            <h3>📘 Ułamek dziesiętny</h3>
+                            <p class="word-desc">
+                                Liczba zapisana za pomocą przecinka.
+                            </p>
+                            <div class="word-ua">
+                                🇺🇦 Десятковий дріб — це дріб, який записують за допомогою коми.
+                            </div>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘 Przecinek</h3>
+                            <p class="word-desc">
+                                Oddziela część całkowitą od części ułamkowej.
+                            </p>
+                            <div class="word-ua">
+                                🇺🇦 Кома відокремлює цілу частину від дробової.
+                            </div>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘 Dziesiąta</h3>
+
+                            <p class="word-desc">
+                                Jedna część z 10 równych części.
+                            </p>
+
+                            <div class="word-ua">
+                                🇺🇦 Десята — це одна частина з десяти рівних частин.
+                            </div>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘 Setna</h3>
+
+                            <p class="word-desc">
+                                Jedna część z 100 równych części.
+                            </p>
+
+                            <div class="word-ua">
+                                🇺🇦 Сота — це одна частина зі ста рівних частин.
+                            </div>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘 Tysięczna</h3>
+
+                            <p class="word-desc">
+                                Jedna część z 1000 równych części.
+                            </p>
+
+                            <div class="word-ua">
+                                🇺🇦 Тисячна — це одна частина з тисячі рівних частин.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">
+                            ← Wstecz
+                        </button>
+
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            Dalej →
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ==========================================
+        SLIDE 7 — ODKRYJ ZASADĘ. 
+        ========================================== -->
+        <section class="slide" id="slide7">
+
+            <div class="lesson-container">
+                <div class="card section-lesson">
+
+                    <h2>🧩 Odkryj zasadę</h2>
+
+                    <div class="decimal-scheme">
+                        <img src="/images/slide7_1.png" alt="">
+                        <img src="/images/slide7_2.png" alt="">
+                        <img src="/images/slide7_3.png" alt="">
+                    </div>
+
+                    <div class="owl-card owl-remember">
+
+                        <div class="rule-title">
+                            <img src="images/sowa_zapamientaj.png">
+                            <span>Zapamiętaj</span>
+                        </div>
+
+                        <p>
+                            10 → 1 cyfra po przecinku
+                        </p>
+
+                        <p>
+                            100 → 2 cyfry po przecinku
+                        </p>
+
+                        <p>
+                            1000 → 3 cyfry po przecinku
+                        </p>
+                        <p>Liczba zer w mianowniku pokazuje, ile cyfr będzie po przecinku.</p>
+                        <!-- ua -->
+                        <div class="ua-box">
+                            <button class="ua-trigger">🇺🇦 Українською</button>
+                            <div class="ua-content">
+                                <h3>🇺🇦 Запам'ятай</h4>
+                                    <p><b>10 → 1 цифра після коми</b></p>
+                                    <p><b>100 → 2 цифри після коми</b></p>
+                                    <p><b>1000 → 3 цифри після коми</b></p>
+                                    <p>Кількість нулів у знаменнику показує, скільки цифр потрібно записати після коми.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">
+                            ← Wstecz
+                        </button>
+
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            Dalej →
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ==========================================
+        SLIDE 8 — DZIESIĄTE. 
+        ========================================== -->
+        <section class="slide" id="slide8">
+
+            <div class="lesson-container">
+                <div class="card section-lesson">
+
+                    <h2>🔟 Części dziesiąte</h2>
+                    <img src="/images/slide8_1.png" alt="slide8_1" style="width: 70%;margin: 0 auto;">
+                    <h2>
+                        <h2>✍️ Spróbuj sam</h2>
+                    </h2>
+                    <div class="decimal-task">
+
+                        <h3>🧩 Zamień ułamki na dziesiętne</h3>
+
+                        <p>Wpisz odpowiedź.</p>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">3</span>
+                                <span class="bottom">10</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,3">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">7</span>
+                                <span class="bottom">10</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,7">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">1</span>
+                                <span class="bottom">10</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,1">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">9</span>
+                                <span class="bottom">10</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,9">
+                        </div>
+
+                        <button class="btn btn-primary" onclick="checkDecimals()">
+                            ✅ Sprawdź
+                        </button>
+                        <div id="decimalResult"></div>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">
+                            ← Wstecz
+                        </button>
+
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            Dalej →
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+        SLIDE 9 — SETNE 
+        ========================================== -->
+        <section class="slide" id="slide9">
+
+            <div class="lesson-container">
+                <div class="card section-lesson">
+
+                    <h2>💯 Części setne</h2>
+                    <img src="/images/slide10.png" alt="" style="width: 70%;margin: 0 auto;">
+
+                    <div class="decimal-task">
+
+                        <h3>🧩 Zamień ułamki na dziesiętne</h3>
+
+                        <p>Wpisz odpowiedź.</p>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">14</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,14">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">37</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,37">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">1</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,01">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">9</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,09">
+                        </div>
+
+                        <button class="btn btn-primary" onclick="checkDecimals()">
+                            ✅ Sprawdź
+                        </button>
+                        <div id="decimalResult"></div>
+                    </div>
+
+                    <div class="navigation">
+
+                        <button class="btn btn-secondary" onclick="prevSlide()">
+                            ← Wstecz
+                        </button>
+
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            Dalej →
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ==========================================
+        SLIDE 11 — GDZIE PODZIAŁA SIĘ CYFRA? class="slide" id="slide11"
+        ========================================== -->
+        <section>
+            <div class="lesson-container">
+                <div class="card section-lesson">
+
+                    <h2>🧐 Gdzie podziała się cyfra?</h2>
+                    <div class="decimal-example-big">
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">9</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span>=</span>
+                            <span>0,09</span>
+                        </div>
+
+                    </div>
+
+                    <p>Mianownik to 100.</p>
+                    <p>👉 W liczbie 100 są <b>dwa zera</b>.</p>
+                    <p>To znaczy, że po przecinku muszą być <b>dwie cyfry</b>.</p>
+                    <p>Mamy jednak tylko jedną cyfrę: <b>9</b>. Brakuje nam jeszcze jednej cyfry.</p>
+                    <p>🤔 Co wpisujemy w puste miejsce? ✅ Wstawiamy 0.</p>
+                    <p class="p24">Dlatego: 9/100 = 0,09</p>
+                    <div class="decimal-notebook">
+                        <div class="cell">0</div>
+                        <div class="cell">,</div>
+                        <div class="cell zero">0</div>
+                        <div class="cell">9</div>
+                    </div>
+
+                    <div class="owl-card owl-remember">
+                        <div class="rule-title">
+                            <img src="images/sowa_zapamientaj.png">
+                            <span>Zapamiętaj</span>
+                        </div>
+                        <p class="p24">🔹 Spójrz na mianownik.</p>
+                        <p><b>10 → jedno zero → 1 cyfra po przecinku</b></p>
+                        <p><b>100 → dwa zera → 2 cyfry po przecinku</b></p>
+                        <p><b>1000 → trzy zera → 3 cyfry po przecinku</b></p>
+                        <p>Jeżeli cyfr po przecinku jest za mało, dopisujemy z <b>lewej strony</b> zera.</p>
+                    </div>
+                    <img src="images/slide11_1.png" alt="" style="width: 40%;margin: 0 auto;">
+                    <!-- ua -->
+                    <div class="ua-box">
+                        <button class="ua-trigger">🇺🇦 Українською</button>
+                        <div class="ua-content">
+                            <h3>Подивись на знаменник.</h3>
+                            <p><b>10 → один нуль → 1 цифра після коми</b></p>
+                            <p><b>100 → два нулі → 2 цифри після коми</b></p>
+                            <p><b>1000 → три нулі → 3 цифри після коми</b></p>
+                            <p>Якщо цифр після коми не вистачає, дописуємо нулі зліва.</p>
+                            <p class="p24 red">9/100 = 0,09</p>
+                            <p>Бо після коми повинно бути дві цифри, а число 9 має лише одну цифру.</p>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+                    </div>
+
                 </div>
             </div>
         </section>
-
         <!-- ==========================================
         SLIDE 12
         MISJA SOWY
@@ -706,303 +709,349 @@
         </section>
 
         <!-- ==========================================
-        SLIDE 13
-        DO PLECAKA SOWY
+        SLIDE 12 — TYSIĘCZNE
         ========================================== -->
+        <section class="slide" id="slide12">
+            <div class="lesson-container">
+                <div class="card section-lesson">
 
+                    <h2>1️⃣0️⃣0️⃣0️⃣ Części tysięczne</h2>
+
+                    <div class="decimal-example-big">
+                        127/1000 = 0,127
+                    </div>
+
+                    <p>Mianownik to 1000.</p>
+                    <p>Po przecinku zapisujemy trzy cyfry.</p>
+
+                    <div class="decimal-notebook">
+                        <div class="cell">0</div>
+                        <div class="cell">,</div>
+                        <div class="cell">1</div>
+                        <div class="cell">2</div>
+                        <div class="cell">7</div>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+        SLIDE 13 — ZADANIE Z OKIENKAMI
+        ========================================== -->
         <section class="slide" id="slide13">
             <div class="lesson-container">
                 <div class="card section-mission">
-                    <div class="rule-title">
-                        <img src="image/sowa_misia.png" alt="Sowa EduMost">
-                        <span>Misja Sowy EduMost</span>
-                    </div>
-                    <div class="owl-card owl-mission">
-                        <h4>🎯 Misja</h4>
-                        <p>
-                            Sowa przygotowuje przyjęcie
-                            dla swoich przyjaciół.
-                        </p>
-                        <p>
-                            Pomóż jej rozwiązać zadania.
-                        </p>
-                    </div>
-                    <!-- Zadanie 1 -->
-                    <div class="quiz-block">
-                        <h3>🍕 Zadanie 1</h3>
-                        <img src="image/pizza-2-6.png" class="lesson-image zum" style="max-width:400px;margin:auto;">
-                        <p class="wopros">
-                            Jaka część pizzy została zaznaczona?
-                        </p>
-                        <div class="answers">
-                            <button class="quiz-answer">
-                                1/6
-                            </button>
-                            <button class="quiz-answer" data-correct="true">
-                                2/6
-                            </button>
-                            <button class="quiz-answer">
-                                4/6
-                            </button>
+
+                    <h2>✍️ Uzupełnij zapis</h2>
+
+                    <div class="exercise-box">
+
+                        <p>7/100 = ?</p>
+
+                        <div class="decimal-notebook">
+                            <div class="cell">0</div>
+                            <div class="cell">,</div>
+                            <input class="decimal-input">
+                            <input class="decimal-input">
                         </div>
-                        <div class="task-result"></div>
-                    </div>
-                    <hr>
 
-                    <!-- Zadanie 2 -->
-
-                    <div class="quiz-block">
-                        <h3>🍫 Zadanie 2</h3>
-                        <img src="image/zadanie_2.png" class="lesson-image zum" style="max-width:400px;margin:auto;">
-                        <p class="wopros">
-                            Co trzeba zrobić najpierw?
+                        <p class="hint">
+                            Powinny być dwie cyfry po przecinku.
                         </p>
-                        <div class="answers">
-                            <button class="quiz-answer" data-correct="true">
-                                Policzyć wszystkie części
-                            </button>
-                            <button class="quiz-answer">
-                                Policzyć tylko zaznaczone
-                            </button>
+
+                    </div>
+
+                    <div class="owl-card owl-think">
+                        <div class="rule-title">
+                            <img src="images/sowa_pomysl.png">
+                            <span>Pomyśl</span>
                         </div>
-                        <div class="task-result"></div>
+                        <p>Ile zer ma mianownik?</p>
                     </div>
-                    <hr>
 
-                    <!-- Zadanie 3 -->
-
-                    <div class="quiz-block">
-                        <h3>🎂 Zadanie 3</h3>
-                        <img src="image/zadanie_3.png" class="lesson-image zum" style="max-width:400px;margin:auto;">
-                        <p class="wopros">
-                            Czy możemy zapisać ułamek,
-                            jeśli części nie są równe?
-                        </p>
-                        <div class="answers">
-                            <button class="quiz-answer">
-                                Tak
-                            </button>
-                            <button class="quiz-answer" data-correct="true">
-                                Nie
-                            </button>
-                        </div>
-                        <div class="task-result"></div>
-                    </div>
-                    <div class="owl-card owl-remember">
-                        <h4>🏆 Brawo!</h4>
-                        <p>
-                            Sowa jest bardzo zadowolona.
-                            Pomogłeś jej ukończyć misję.
-                        </p>
-                    </div>
                     <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
                     </div>
+
                 </div>
             </div>
         </section>
-
-
-        <!-- ==========================================
-        SLIDE 14
-        MOST WIEDZY
-        ========================================== -->
-        
+        <!-- SLIDE 14 — JAK CZYTAMY? -->
         <section class="slide" id="slide14">
             <div class="lesson-container">
-                <div class="card section-summary">
-                    <h2>🎒 Do plecaka Sowy</h2>
-                    <div class="owl-card owl-remember">
-                        <div class="rule-title">
-                            <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
-                            <span>Co zapamiętujemy?</span>
+                <div class="card section-lesson">
+
+                    <h2>📖 Jak czytamy ułamki dziesiętne?</h2>
+
+                    <div class="reading-grid">
+
+                        <div class="reading-card">
+                            <h3>0,1</h3>
+                            <p>jedna dziesiąta</p>
                         </div>
-                        <ul>
-                            <li>
-                                ✅ Ułamek pokazuje część całości.
-                            </li>
-                            <li>
-                                ✅ Całość musi być podzielona
-                                na równe części.
-                            </li>
-                            <li>
-                                ✅ Licznik mówi,
-                                ile części bierzemy.
-                            </li>
-                            <li>
-                                ✅ Mianownik mówi,
-                                na ile części podzielono całość.
-                            </li>
-                        </ul>
+
+                        <div class="reading-card">
+                            <h3>0,25</h3>
+                            <p>dwadzieścia pięć setnych</p>
+                        </div>
+
+                        <div class="reading-card">
+                            <h3>0,127</h3>
+                            <p>sto dwadzieścia siedem tysięcznych</p>
+                        </div>
+
                     </div>
-                    <!-- ua -->
+
                     <div class="ua-box">
                         <button class="ua-trigger">🇺🇦 Українською</button>
                         <div class="ua-content">
-                            <p><b>Що ми запам’ятовуємо?</b></p>
-                            <p>✅ Дріб показує частину цілого.</p>
-                            <p>✅ Ціле має бути поділене на рівні частини.</p>
-                            <p>✅ Чисельник показує, скільки частин ми беремо.</p>
-                            <p>✅ Знаменник показує, на скільки частин поділили ціле.</p>
+                            <p>0,1 — одна десята</p>
+                            <p>0,25 — двадцять п’ять сотих</p>
+                            <p>0,127 — сто двадцять сім тисячних</p>
                         </div>
                     </div>
-                    <br>
-                    <!-- Most Wiedzy -->
-                    <h2>Most Wiedzy</h2>
-                    <div class="bridge-info">
-                        <img src="image/owl_bridge.png" alt="Sowa EduMost">
 
-                        <div>
-
-                            <h3>🌉 Co to jest Most Wiedzy?</h3>
-
-                            <p>
-                                Każde nowe słowo,
-                                które poznajesz,
-                                trafia na Twój Most Wiedzy.
-                            </p>
-
-                            <p>
-                                Te słowa będą wracały
-                                w kolejnych lekcjach matematyki.
-                            </p>
-
-                            <p>
-                                Im więcej słów poznasz,
-                                tym silniejszy stanie się Twój Most Wiedzy.
-                            </p>
-
-                        </div>
-
-                    </div>
-                    <!-- ua -->
-                    <div class="ua-box">
-                        <button class="ua-trigger">🇺🇦 Українською</button>
-                        <div class="ua-content">
-                            <p>🌉 <b>Що таке Міст знань?</b></p>
-                            <p>Кожне нове слово, яке ти вивчаєш, потрапляє до твого Мосту знань.</p>
-                            <p>Ці слова будуть знову з'являтися на наступних уроках математики.</p>
-                            <p>Чим більше слів ти знаєш, тим міцнішим стає твій Міст знань.</p>
-                        </div>
-                    </div>
-                    <div class="vocab-grid">
-                        <div class="word-card">
-                            <h3>🍕</h3>
-                            <p>Całość</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>🧩</h3>
-                            <p>Część</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>⚖️</h3>
-                            <p>Równe części</p>
-                        </div>
-                        <div class="word-card">
-                            <h3>➗</h3>
-                            <p>Ułamek</p>
-                        </div>
-                    </div>
                     <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
                     </div>
+
                 </div>
             </div>
         </section>
-        <!-- ==========================================
-        SLIDE 15
-        MOST WIEDZY
-        ========================================== -->
-        
+        <!-- SLIDE 15 — QUIZ -->
         <section class="slide" id="slide15">
             <div class="lesson-container">
-                <div class="card section-summary">
-                    <h2>Podsumowanie</h2>
-                   
-                    <div class="image">
-                        <img src="image/7.png" alt="Sowa EduMost" class="zum">
+                <div class="card section-mission">
+
+                    <h2>🧩 Sprawdź się</h2>
+
+                    <div class="quiz-block">
+
+                        <p>Jak czytamy liczbę 0,3 ?</p>
+
+                        <div class="answers">
+                            <button class="quiz-answer" data-correct="true">trzy dziesiąte</button>
+                            <button class="quiz-answer">trzy setne</button>
+                            <button class="quiz-answer">trzy tysięczne</button>
+                        </div>
+
+                        <div class="task-result"></div>
 
                     </div>
-                    <div class="image">
-                        <img src="image/8.png" alt="Sowa EduMost" class="zum">
 
-                    </div>
-                  
                     <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
                     </div>
+
                 </div>
             </div>
         </section>
-
-        <!-- ==========================================
-        SLIDE 16
-        GRATULACJE
-        ========================================== -->
-
+        <!-- SLIDE 16 — METRO -->
         <section class="slide" id="slide16">
             <div class="lesson-container">
-                <div class="hero-card">
-                    <h1>🏅 Gratulacje!</h1>
-                    <h3>
-                        Ukończyłeś lekcję
-                        o ułamkach.
-                    </h3>
-                    <div style="
-                font-size:80px;
-                margin:30px 0;">
-                        🍕➗📚
+                <div class="card section-lesson">
+
+                    <h2>🚇 Metro Ułamków Dziesiętnych</h2>
+
+                    <p>Każda stacja oznacza inną część.</p>
+
+                    <div class="metro-line">
+
+                        <div class="metro-station">
+                            🚉<br>Dziesiąte
+                        </div>
+
+                        <div class="metro-station">
+                            🚉<br>Setne
+                        </div>
+
+                        <div class="metro-station">
+                            🚉<br>Tysięczne
+                        </div>
+
                     </div>
-                    <p>
-                        Teraz już wiesz:
-                    </p>
-                    <ul style="
-                max-width:700px;
-                margin:20px auto;
-                text-align:left;">
-                        <li>
-                            ✅ czym jest całość
-                        </li>
-                        <li>
-                            ✅ czym jest część
-                        </li>
-                        <li>
-                            ✅ czym jest ułamek
-                        </li>
-                        <li>
-                            ✅ jak odczytywać proste ułamki
-                        </li>
-                        <li>
-                            ✅ dlaczego części muszą być równe
-                        </li>
+
+                    <div class="owl-card owl-think">
+                        <div class="rule-title">
+                            <img src="images/sowa_mowi.png">
+                            <span>Sowa mówi</span>
+                        </div>
+                        <p>Im dalej jedziemy, tym więcej cyfr pojawia się po przecinku.</p>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- SLIDE 17 — MISJA SOWY -->
+        <section class="slide" id="slide17">
+            <div class="lesson-container">
+                <div class="card section-mission">
+
+                    <h2>🎯 Misja Sowy EduMost</h2>
+
+                    <div class="quiz-block">
+
+                        <p>5/10 = ?</p>
+
+                        <div class="answers">
+                            <button class="quiz-answer">0,05</button>
+                            <button class="quiz-answer" data-correct="true">0,5</button>
+                            <button class="quiz-answer">5,0</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="quiz-block">
+
+                        <p>3/100 = ?</p>
+
+                        <div class="answers">
+                            <button class="quiz-answer">0,3</button>
+                            <button class="quiz-answer" data-correct="true">0,03</button>
+                            <button class="quiz-answer">0,003</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+        SLIDE 18 — DO PLECAKA SOWY
+        ========================================== -->
+        <section class="slide" id="slide18">
+            <div class="lesson-container">
+                <div class="card section-summary">
+
+                    <h2>🎒 Do plecaka Sowy</h2>
+
+                    <ul class="summary-list">
+                        <li>✅ Ułamki dziesiętne zapisujemy przecinkiem.</li>
+                        <li>✅ Mianownik 10 → 1 cyfra po przecinku.</li>
+                        <li>✅ Mianownik 100 → 2 cyfry po przecinku.</li>
+                        <li>✅ Mianownik 1000 → 3 cyfry po przecinku.</li>
+                        <li>✅ Brakujące miejsca uzupełniamy zerami.</li>
                     </ul>
-                    <h3>
-                        ⭐ Jesteś gotowy
-                        na następną lekcję!
-                    </h3>
-                    <br>
+
+                    <div class="ua-box">
+                        <button class="ua-trigger">🇺🇦 Українською</button>
+                        <div class="ua-content">
+                            <p>Десяткові дроби записують через кому.</p>
+                            <p>10 → 1 цифра після коми.</p>
+                            <p>100 → 2 цифри після коми.</p>
+                            <p>1000 → 3 цифри після коми.</p>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+        SLIDE 19 — MOST WIEDZY
+        ========================================== -->
+        <section class="slide" id="slide19">
+            <div class="lesson-container">
+                <div class="card section-summary">
+
+                    <h2>🌉 Most Wiedzy</h2>
+
+                    <div class="vocab-grid">
+
+                        <div class="word-card">
+                            <h3>📘</h3>
+                            <p>Ułamek dziesiętny</p>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘</h3>
+                            <p>Przecinek</p>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘</h3>
+                            <p>Dziesiąta</p>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘</h3>
+                            <p>Setna</p>
+                        </div>
+
+                        <div class="word-card">
+                            <h3>📘</h3>
+                            <p>Tysięczna</p>
+                        </div>
+
+                    </div>
+
+                    <div class="navigation">
+                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
+                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- SLIDE 20 — GRATULACJE -->
+        <section class="slide" id="slide20">
+            <div class="lesson-container">
+                <div class="hero-card">
+
+                    <h1>🏆 Gratulacje!</h1>
+
+                    <h3>Ukończyłeś lekcję o ułamkach dziesiętnych.</h3>
+
+                    <p>Dzisiaj poznałeś:</p>
+
+                    <ul>
+                        <li>✅ ułamek dziesiętny</li>
+                        <li>✅ przecinek</li>
+                        <li>✅ części dziesiąte</li>
+                        <li>✅ części setne</li>
+                        <li>✅ części tysięczne</li>
+                        <li>✅ odczytywanie liczb dziesiętnych</li>
+                    </ul>
+
+                    <div style="font-size:80px;margin:25px 0;">
+                        🚇📐🦉
+                    </div>
+
+                    <h3>Świetna robota!</h3>
+
                     <a href="#" class="btn btn-answer">
                         📋 Ankieta dla rodziców
                     </a>
+
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- ==================================================

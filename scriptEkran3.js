@@ -5,6 +5,6 @@ document
 .addEventListener("click", () => {
 
 window.location.href =
-"indexLekcja42.html";
+"indexLekcja41.html";
 
 });

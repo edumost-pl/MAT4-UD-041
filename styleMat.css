@@ -19,9 +19,11 @@ scroll-behavior:smooth;
 
 body{
 font-family:"Baloo 2",sans-serif;
+font-family: Nunito;
 background:#eef4fb;
 color:#263238;
 line-height:1.6;
+
 /* background-image: url('image/fon.png'); */
 }
 
@@ -61,8 +63,17 @@ margin-bottom:10px;
 
 p{
 font-size:1.5rem;
-}
 
+}
+.centr{
+    text-align: center;
+}
+.p24{
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: green;
+}
 ul{
 padding-left:25px;
 font-size:1.4rem;
@@ -402,6 +413,13 @@ gap:20px;
 width:100%;
 border-radius:22px;
 display:block;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
 }
 
 .zum{
