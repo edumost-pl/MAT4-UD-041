@@ -559,9 +559,9 @@
 
         </section>
         <!-- ==========================================
-        SLIDE 11 — GDZIE PODZIAŁA SIĘ CYFRA? class="slide" id="slide11"
+        SLIDE 11 — GDZIE PODZIAŁA SIĘ CYFRA? 
         ========================================== -->
-        <section>
+        <section class="slide" id="slide11">
             <div class="lesson-container">
                 <div class="card section-lesson">
 
@@ -626,90 +626,7 @@
             </div>
         </section>
         <!-- ==========================================
-        SLIDE 12
-        MISJA SOWY
-        ========================================== -->
-
-        <section class="slide" id="slide12">
-            <div class="lesson-container">
-                <div class="card section-warning">
-                    <div class="rule-title">
-                        <img src="image/sowa_uwazaj.png" alt="Sowa EduMost">
-                        <span>Uważaj</span>
-                    </div>
-                    <p style="text-align:center;">
-                        Zobacz najczęstsze błędy.
-                    </p>
-                    <br>
-                    <div class="grid-2">
-                        <div class="warning-box">
-                            <h3>
-                                ❌ Nierówne części
-                            </h3>
-                            <p>
-                                Ułamek działa tylko wtedy,
-                                gdy całość została podzielona
-                                na równe części.
-                            </p>
-                        </div>
-                        <div class="warning-box">
-                            <h3>
-                                ❌ Odwrotny zapis
-                            </h3>
-                            <p>
-                                Jeśli mamy
-                                1 część z 4 części,
-                                zapisujemy:
-                            </p>
-                            <div class="fraction">
-                                1
-                                <hr>
-                                4
-                            </div>
-                            <p>
-                                a nie
-                            </p>
-                            <div class="fraction">
-                                4
-                                <hr>
-                                1
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-card owl-warning">
-                        <div class="rule-title">
-                            <img src="image/sowa_zapamientaj.png" alt="Sowa EduMost">
-                            <span>Pamiętaj</span>
-                        </div>
-                        <p>
-                            Najpierw policz wszystkie części.
-                        </p>
-                        <p>
-                            Potem policz części zaznaczone.
-                        </p>
-                        <!-- ua -->
-                        <div class="ua-box">
-                            <button class="ua-trigger">🇺🇦 Українською</button>
-                            <div class="ua-content">
-                                <p>Спочатку порахуй усі частини.</p>
-                                <p>Потім порахуй виділені частини.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">
-                            ← Wstecz
-                        </button>
-                        <button class="btn btn-primary" onclick="nextSlide()">
-                            Dalej →
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
-        SLIDE 12 — TYSIĘCZNE
+        SLIDE 12 — TYSIĘCZNE 
         ========================================== -->
         <section class="slide" id="slide12">
             <div class="lesson-container">
@@ -741,79 +658,152 @@
             </div>
         </section>
         <!-- ==========================================
-        SLIDE 13 — ZADANIE Z OKIENKAMI
+        SLIDE 13  MISJA SOWY 
         ========================================== -->
         <section class="slide" id="slide13">
+
             <div class="lesson-container">
-                <div class="card section-mission">
+                <div class="card section-lesson">
 
-                    <h2>✍️ Uzupełnij zapis</h2>
+                    <h2>💯 Części setne</h2>
+                    <img src="/images/slide12.png" alt="" style="width: 70%;margin: 0 auto;">
 
-                    <div class="exercise-box">
+                    <div class="decimal-task">
 
-                        <p>7/100 = ?</p>
+                        <h3>🧩 Zamień ułamki na dziesiętne</h3>
 
-                        <div class="decimal-notebook">
-                            <div class="cell">0</div>
-                            <div class="cell">,</div>
-                            <input class="decimal-input">
-                            <input class="decimal-input">
+                        <p>Wpisz odpowiedź.</p>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">104</span>
+                                <span class="bottom">1000</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,104">
                         </div>
 
-                        <p class="hint">
-                            Powinny być dwie cyfry po przecinku.
-                        </p>
-
-                    </div>
-
-                    <div class="owl-card owl-think">
-                        <div class="rule-title">
-                            <img src="images/sowa_pomysl.png">
-                            <span>Pomyśl</span>
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">37</span>
+                                <span class="bottom">1000</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,370">
                         </div>
-                        <p>Ile zer ma mianownik?</p>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">1</span>
+                                <span class="bottom">1000</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,001">
+                        </div>
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">249</span>
+                                <span class="bottom">1000</span>
+                            </div>
+                            <span>=</span>
+                            <input type="text" class="decimal-check" data-answer="0,249">
+                        </div>
+
+                        <button class="btn btn-primary" onclick="checkDecimals()">
+                            ✅ Sprawdź
+                        </button>
+                        <div id="decimalResult"></div>
                     </div>
 
                     <div class="navigation">
-                        <button class="btn btn-secondary" onclick="prevSlide()">← Wstecz</button>
-                        <button class="btn btn-primary" onclick="nextSlide()">Dalej →</button>
+
+                        <button class="btn btn-secondary" onclick="prevSlide()">
+                            ← Wstecz
+                        </button>
+
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            Dalej →
+                        </button>
+
                     </div>
 
                 </div>
             </div>
+
         </section>
-        <!-- SLIDE 14 — JAK CZYTAMY? -->
+
+        <!-- SLIDE 14 — JAK CZYTAMY?  -->
         <section class="slide" id="slide14">
             <div class="lesson-container">
                 <div class="card section-lesson">
 
                     <h2>📖 Jak czytamy ułamki dziesiętne?</h2>
+                    <p class="p24">Ułamki dziesiętne można czytać na <b>dwa sposoby</b>:</p>
 
-                    <div class="reading-grid">
+                    <div class="flex">
 
                         <div class="reading-card">
-                            <h3>0,1</h3>
-                            <p>jedna dziesiąta</p>
+                            <h3>🔹 jako ułamki zwykłe</h3><br>
+                            <p>0,1 → jedna dziesiąta</p>
+                            <p>0,25 → dwadzieścia pięć setnych</p>
+                            <p>0,127 → sto dwadzieścia siedem tysięcznych</p>
                         </div>
 
                         <div class="reading-card">
-                            <h3>0,25</h3>
-                            <p>dwadzieścia pięć setnych</p>
-                        </div>
-
-                        <div class="reading-card">
-                            <h3>0,127</h3>
-                            <p>sto dwadzieścia siedem tysięcznych</p>
+                            <h3>🔹 cyfra po cyfrze po przecinku</h3>
+                            <p>0,1 → zero przecinek jeden</p>
+                            <p>0,25 → zero przecinek dwadzieścia pięć</p>
+                            <p>0,127 → zero przecinek sto dwadzieścia siedem</p>
                         </div>
 
                     </div>
+                    <p class="p24">💡 W matematyce częściej używamy pierwszego sposobu, ponieważ pokazuje on wartość
+                        ułamka.</p>
 
                     <div class="ua-box">
                         <button class="ua-trigger">🇺🇦 Українською</button>
                         <div class="ua-content">
-                            <p>0,1 — одна десята</p>
-                            <p>0,25 — двадцять п’ять сотих</p>
-                            <p>0,127 — сто двадцять сім тисячних</p>
+                            <h3>Десяткові дроби можна читати двома способами:</h3>
+                            <div class="flex">
+                                <div>
+                                    <h4>🔹 як звичайні дроби</h4>
+                                    <p>0,1 → одна десята</p>
+                                    <p>0,25 → двадцять п'ять сотих</p>
+                                    <p>0,127 → сто двадцять сім тисячних</p>
+                                </div>
+                                <div>
+                                    <h4>🔹 по цифрах після коми</h4>
+                                    <p>0,1 → нуль кома один</p>
+                                    <p>0,25 → нуль кома двадцять п'ять</p>
+                                    <p>0,127 → нуль кома сто двадцять сім</p>
+                                </div>
+                            </div>
+                            <p class="p24">💡 На уроках математики частіше використовують перший спосіб, тому що він
+                                показує значення дробу.</p>
+                        </div>
+                    </div>
+                    <div class="owl-card owl-remember">
+
+                        <div class="rule-title">
+                            <img src="images/sowa_zapamientaj.png">
+                            <span>Pamiętaj!</span>
+                        </div>
+
+                        <p>W życiu codziennym często mówimy: <b><em>zero przecinek dwadzieścia pięć</em></b></p>
+
+                        <p>Ale na lekcjach matematyki częściej czytamy: <b><em>dwadzieścia pięć setnych</em></b></p>
+
+                        <!-- ua -->
+                        <div class="ua-box">
+                            <button class="ua-trigger">🇺🇦 Українською</button>
+                            <div class="ua-content">
+                                <h3>🇺🇦 Пам'ятай!</h4>
+                                    <p>У повсякденному житті ми часто говоримо: <b><em>нуль кома двадцять п'ять</em></b>
+                                    </p>
+                                    <p>Але на уроках математики частіше читаємо: <b><em>двадцять п'ять сотих</em></b>
+                                    </p>
+                            </div>
                         </div>
                     </div>
 
@@ -825,7 +815,7 @@
                 </div>
             </div>
         </section>
-        <!-- SLIDE 15 — QUIZ -->
+        <!-- SLIDE 15 — QUIZ class="slide" id="slide15" -->
         <section class="slide" id="slide15">
             <div class="lesson-container">
                 <div class="card section-mission">
@@ -833,17 +823,94 @@
                     <h2>🧩 Sprawdź się</h2>
 
                     <div class="quiz-block">
-
                         <p>Jak czytamy liczbę 0,3 ?</p>
-
                         <div class="answers">
                             <button class="quiz-answer" data-correct="true">trzy dziesiąte</button>
                             <button class="quiz-answer">trzy setne</button>
                             <button class="quiz-answer">trzy tysięczne</button>
                         </div>
-
                         <div class="task-result"></div>
+                    </div>
 
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,7 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">siedem setnych</button>
+                            <button class="quiz-answer" data-correct="true">siedem dziesiątych</button>
+                            <button class="quiz-answer">siedem tysięcznych</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,25 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">dwadzieścia pięć dziesiątych</button>
+                            <button class="quiz-answer" data-correct="true">dwadzieścia pięć setnych</button>
+                            <button class="quiz-answer">dwadzieścia pięć tysięcznych</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,48 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">czterdzieści osiem dziesiątych</button>
+                            <button class="quiz-answer">czterdzieści osiem tysięcznych</button>
+                            <button class="quiz-answer" data-correct="true">czterdzieści osiem setnych</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,105 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">sto pięć setnych</button>
+                            <button class="quiz-answer" data-correct="true">sto pięć tysięcznych</button>
+                            <button class="quiz-answer">dziesięć i pięć setnych</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,127 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">sto dwadzieścia siedem setnych</button>
+                            <button class="quiz-answer" data-correct="true">sto dwadzieścia siedem tysięcznych</button>
+                            <button class="quiz-answer">dwanaście i siedem tysięcznych</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,009 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">dziewięć setnych</button>
+                            <button class="quiz-answer">dziewięć dziesiątych</button>
+                            <button class="quiz-answer" data-correct="true">dziewięć tysięcznych</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,302 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">trzysta dwa setne</button>
+                            <button class="quiz-answer" data-correct="true">trzysta dwa tysięczne</button>
+                            <button class="quiz-answer">trzy i dwa setne</button>
+                        </div>
+                        <div class="task-result"></div>
+                    </div>
+
+                    <div class="quiz-block">
+                        <p>Jak czytamy liczbę 0,999 ?</p>
+                        <div class="answers">
+                            <button class="quiz-answer">dziewięćdziesiąt dziewięć setnych</button>
+                            <button class="quiz-answer">dziewięćset dziewięćdziesiąt dziewięć setnych</button>
+                            <button class="quiz-answer" data-correct="true">dziewięćset dziewięćdziesiąt dziewięć
+                                tysięcznych</button>
+                        </div>
+                        <div class="task-result"></div>
                     </div>
 
                     <div class="navigation">
@@ -895,7 +962,7 @@
                 </div>
             </div>
         </section>
-        <!-- SLIDE 17 — MISJA SOWY -->
+        <!-- SLIDE 17 — MISJA SOWY  -->
         <section class="slide" id="slide17">
             <div class="lesson-container">
                 <div class="card section-mission">
@@ -904,7 +971,14 @@
 
                     <div class="quiz-block">
 
-                        <p>5/10 = ?</p>
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">5</span>
+                                <span class="bottom">10</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
 
                         <div class="answers">
                             <button class="quiz-answer">0,05</button>
@@ -918,12 +992,144 @@
 
                     <div class="quiz-block">
 
-                        <p>3/100 = ?</p>
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">3</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
 
                         <div class="answers">
                             <button class="quiz-answer">0,3</button>
                             <button class="quiz-answer" data-correct="true">0,03</button>
                             <button class="quiz-answer">0,003</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+                    <div class="quiz-block">
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">7</span>
+                                <span class="bottom">10</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
+
+                        <div class="answers">
+                            <button class="quiz-answer">0,07</button>
+                            <button class="quiz-answer" data-correct="true">0,7</button>
+                            <button class="quiz-answer">7,0</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="quiz-block">
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">9</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
+
+                        <div class="answers">
+                            <button class="quiz-answer">0,9</button>
+                            <button class="quiz-answer" data-correct="true">0,09</button>
+                            <button class="quiz-answer">0,009</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="quiz-block">
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">25</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
+
+                        <div class="answers">
+                            <button class="quiz-answer">2,5</button>
+                            <button class="quiz-answer">0,025</button>
+                            <button class="quiz-answer" data-correct="true">0,25</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="quiz-block">
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">6</span>
+                                <span class="bottom">1000</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
+
+                        <div class="answers">
+                            <button class="quiz-answer">0,6</button>
+                            <button class="quiz-answer">0,06</button>
+                            <button class="quiz-answer" data-correct="true">0,006</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="quiz-block">
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">48</span>
+                                <span class="bottom">100</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
+
+                        <div class="answers">
+                            <button class="quiz-answer">4,8</button>
+                            <button class="quiz-answer" data-correct="true">0,48</button>
+                            <button class="quiz-answer">0,048</button>
+                        </div>
+
+                        <div class="task-result"></div>
+
+                    </div>
+
+                    <div class="quiz-block">
+
+                        <div class="decimal-exercise">
+                            <div class="school-fraction">
+                                <span class="top">105</span>
+                                <span class="bottom">1000</span>
+                            </div>
+                            <span class="fraction">=</span>
+                            <span class="fraction">?</span>
+                        </div>
+
+                        <div class="answers">
+                            <button class="quiz-answer">1,05</button>
+                            <button class="quiz-answer">0,1050</button>
+                            <button class="quiz-answer" data-correct="true">0,105</button>
                         </div>
 
                         <div class="task-result"></div>
@@ -939,21 +1145,14 @@
             </div>
         </section>
         <!-- ==========================================
-        SLIDE 18 — DO PLECAKA SOWY
+        SLIDE 18 — DO PLECAKA SOWY 
         ========================================== -->
         <section class="slide" id="slide18">
             <div class="lesson-container">
                 <div class="card section-summary">
 
                     <h2>🎒 Do plecaka Sowy</h2>
-
-                    <ul class="summary-list">
-                        <li>✅ Ułamki dziesiętne zapisujemy przecinkiem.</li>
-                        <li>✅ Mianownik 10 → 1 cyfra po przecinku.</li>
-                        <li>✅ Mianownik 100 → 2 cyfry po przecinku.</li>
-                        <li>✅ Mianownik 1000 → 3 cyfry po przecinku.</li>
-                        <li>✅ Brakujące miejsca uzupełniamy zerami.</li>
-                    </ul>
+                    <img src="images/slide18.png" alt="">
 
                     <div class="ua-box">
                         <button class="ua-trigger">🇺🇦 Українською</button>

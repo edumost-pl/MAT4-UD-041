@@ -37,7 +37,7 @@ body{
     font-family:'Nunito',sans-serif;
     background:var(--page-bg);
     color:var(--text);
-    line-height:1.2;
+    line-height:1.1;
 }
 
 img{
@@ -266,11 +266,19 @@ COMMON HELPERS
     font-size:24px;
     font-weight:700;
 }
+.h4{
+    font-size:1.1rem;
+    font-weight:700;
+    text-align: center;
+}
 
 .flex{
     display:flex;
     gap:25px;
     align-items:center;
+    justify-content: space-around;
+    margin: 2% auto;
+    text-align: left;
 }
 
 .grid-2{
@@ -319,6 +327,12 @@ UKRAINIAN SUPPORT
 
 .ua-content p{
     margin-bottom:10px;
+}
+.ua-content div h4{
+    font-size: 1.5rem;
+    color: cornflowerblue;
+    text-align: center;
+    margin: 7% auto;
 }
 /* ==========================================
 BLOK 11
@@ -458,20 +472,54 @@ ANSWERS
     flex-wrap:wrap;
     gap:12px;
     margin-top:15px;
+    justify-content: center;
 }
 
 .quiz-answer{
-    border:none;
-    cursor:pointer;
-    padding:12px 18px;
-    border-radius:12px;
-    background:#EAF4FF;
-    transition:.25s;
-    font-weight:700;
+    border: none;
+    cursor: pointer;
+    padding: 14px 22px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        180deg,
+        #7fb8e6 0%,
+        #5ea4db 100%
+    );
+
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    box-shadow:
+        0 8px 20px rgba(94,164,219,.25),
+        0 3px 8px rgba(94,164,219,.2),
+        inset 0 1px 0 rgba(255,255,255,.5);
+
+    transition: all .25s ease;
+}
+
+.quiz-answer:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 24px rgba(94,164,219,.3),
+        0 6px 12px rgba(94,164,219,.25),
+        inset 0 2px 0 rgba(255,255,255,.5);
+}
+
+.quiz-answer:active{
+    transform: translateY(2px);
+
+    box-shadow:
+        0 2px 6px rgba(94,164,219,.2),
+        inset 0 2px 4px rgba(0,0,0,.15);
 }
 
 .quiz-answer:hover{
     transform:translateY(-2px);
+    background-color: #3577bd;
 }
 
 .quiz-answer:disabled{
@@ -547,21 +595,7 @@ DECIMAL GRID
     gap:20px;
     margin:25px 0;
 }
-/* ==========================================
-BLOK 24
-DECIMAL CARD
-========================================== */
 
-/* .decimal-card{
-    background:#EAF4FF;
-    border:2px solid #90CAF9;
-    border-radius:20px;
-    padding:25px;
-    text-align:center;
-    font-size:2rem;
-    font-weight:800;
-    color:#357ABD;
-} */
 
 /* ==========================================
 BLOK 25
@@ -602,14 +636,7 @@ DECIMAL COMPARE
     margin:35px 0;
 }
 
-/* .decimal-box{
-    background:#EAF4FF;
-    border:3px solid #90CAF9;
-    border-radius:20px;
-    padding:25px 35px;
-    font-size:2rem;
-    font-weight:800;
-} */
+
 
 .decimal-arrow{
     font-size:2rem;
@@ -629,18 +656,6 @@ DECIMAL SCHEME
     margin:30px auto;
 }
 
-/* .scheme-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 25px;
-    margin-bottom:12px;
-    background:#F7FBFF;
-    border:2px solid #D6E9FF;
-    border-radius:16px;
-    font-size:1.3rem;
-    font-weight:700;
-} */
 
 /* ==========================================
 BLOK 29
@@ -676,7 +691,7 @@ BLOK 30 - проверка поля для вписывания
 .fraction{
     font-size:2rem;
     font-weight:800;
-    min-width:90px;
+    /* min-width:90px; */
 }
 
 .decimal-check{
@@ -790,17 +805,7 @@ EXERCISE BOX
     color:#607D8B;
     margin-top:15px;
 }
-/* ==========================================
-BLOK 34
-READING GRID
-========================================== */
-.reading-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:25px;
-}
+
 /* ==========================================
 BLOK 35
 READING CARD
@@ -1036,11 +1041,6 @@ main{
     font-size:2rem;
 }
 
-/* .scheme-row{
-    font-size:1rem;
-    padding:14px;
-} */
-
 .decimal-row{
     flex-direction:column;
     align-items:center;
@@ -1058,9 +1058,6 @@ main{
     width:100%;
 }
 
-.reading-grid{
-    grid-template-columns:1fr;
-}
 
 .decimal-word-grid{
     grid-template-columns:1fr;
@@ -1100,10 +1097,6 @@ SMALL MOBILE 480px
     font-size:1.2rem;
 }
 
-.decimal-box{
-    /* font-size:1.4rem;
-    padding:15px; */
-}
 
 .fraction-card{
     min-width:90px;
