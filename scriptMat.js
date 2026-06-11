@@ -434,7 +434,8 @@ document.addEventListener("click", function(e){
 });
 
 // проверка поля для вписания
-function checkDecimals(){
+// проверка поля для вписания
+function checkDecimals() {
 
     const fields =
         document.querySelectorAll(
@@ -443,27 +444,38 @@ function checkDecimals(){
 
     let allCorrect = true;
 
-    fields.forEach(field=>{
+    fields.forEach(field => {
 
         field.classList.remove(
             "good",
             "bad"
         );
 
+        // ответ ученика
         const userAnswer =
-            field.value
-            .trim();
+            parseFloat(
+                field.value
+                    .trim()
+                    .replace(",", ".")
+            );
 
+        // правильный ответ
         const correctAnswer =
-            field.dataset.answer;
+            parseFloat(
+                field.dataset.answer
+                    .replace(",", ".")
+            );
 
-        if(userAnswer === correctAnswer){
+        if (
+            !isNaN(userAnswer) &&
+            userAnswer === correctAnswer
+        ) {
 
             field.classList.add(
                 "good"
             );
 
-        }else{
+        } else {
 
             field.classList.add(
                 "bad"
@@ -479,15 +491,15 @@ function checkDecimals(){
             "decimalResult"
         );
 
-    if(allCorrect){
+    if (allCorrect) {
 
         result.innerHTML =
-        "🎉 Brawo! Wszystkie odpowiedzi są poprawne.";
+            "🎉 Brawo! Wszystkie odpowiedzi są poprawne.";
 
-    }else{
+    } else {
 
         result.innerHTML =
-        "❌ Spróbuj jeszcze raz.";
+            "❌ Spróbuj jeszcze raz.";
     }
 
 }
