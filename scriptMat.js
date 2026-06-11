@@ -434,11 +434,19 @@ document.addEventListener("click", function(e){
 });
 
 // проверка поля для вписания
-// проверка поля для вписания
 function checkDecimals() {
 
+    // текущий активный слайд
+    const currentSlide =
+        document.querySelector(
+            ".slide.active"
+        );
+
+    if (!currentSlide) return;
+
+    // поля только текущего задания
     const fields =
-        document.querySelectorAll(
+        currentSlide.querySelectorAll(
             ".decimal-check"
         );
 
@@ -451,7 +459,6 @@ function checkDecimals() {
             "bad"
         );
 
-        // ответ ученика
         const userAnswer =
             parseFloat(
                 field.value
@@ -459,7 +466,6 @@ function checkDecimals() {
                     .replace(",", ".")
             );
 
-        // правильный ответ
         const correctAnswer =
             parseFloat(
                 field.dataset.answer
@@ -486,20 +492,29 @@ function checkDecimals() {
 
     });
 
+    // результат только текущего задания
     const result =
-        document.getElementById(
-            "decimalResult"
+        currentSlide.querySelector(
+            ".decimalResult"
         );
+
+    if (!result) return;
 
     if (allCorrect) {
 
         result.innerHTML =
             "🎉 Brawo! Wszystkie odpowiedzi są poprawne.";
 
+        result.style.color =
+            "#2E7D32";
+
     } else {
 
         result.innerHTML =
             "❌ Spróbuj jeszcze raz.";
+
+        result.style.color =
+            "#C62828";
     }
 
 }
